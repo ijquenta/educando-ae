@@ -1,23 +1,38 @@
 {
   "main": [
     {
-      "name": "Home",
+      "name": "Principal",
       "url": "/"
     },
     {
-      "name": "Features",
-      "url": "/features"
+      "name": "Quiénes Somos",
+      "url": "/features",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Somos Educando AE",
+          "url": "/features"
+        },
+        {
+          "name": "Nuestro Equipo",
+          "url": "/features"
+        },
+        {
+          "name": "Contactanos",
+          "url": "/contact"
+        }
+      ]
     },
     {
-      "name": "Theme",
+      "name": "Qué Hacemos",
       "url": "/theme"
     },
     {
-      "name": "About",
+      "name": "Actualidad",
       "url": "/about"
     },
     {
-      "name": "Pages",
+      "name": "Colabora",
       "url": "",
       "hasChildren": true,
       "children": [
@@ -28,27 +43,6 @@
         {
           "name": "Does not exist",
           "url": "/does-not-exist"
-        },
-
-        {
-          "name": "Neither does this",
-          "url": "/neither-does-this"
-        },
-        {
-          "name": "Nope, not this one either",
-          "url": "/nope-not-this-one-either"
-        },
-        {
-          "name": "What about this?",
-          "url": "/what-about-this"
-        },
-        {
-          "name": "Come on, this one must exist",
-          "url": "/come-on-this-one-must-exist"
-        },
-        {
-          "name": "Do you expect this to exist?",
-          "url": "/do-you-expect-this-to-exist"
         }
       ]
     }
@@ -56,11 +50,11 @@
 
   "footer": [
     {
-      "name": "About",
+      "name": "Somos Educando AE",
       "url": "/about"
     },
     {
-      "name": "Changelog",
+      "name": "Nuestro Equipo",
       "url": "/changelog"
     }
   ]

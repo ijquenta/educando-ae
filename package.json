@@ -1,8 +1,8 @@
 {
-  "name": "astro-base-template",
+  "name": "educando-ae",
   "version": "1.0.0",
-  "description": "Astro + tailwindcss + react + mdx base template",
-  "author": "alfadev",
+  "description": "Página Web Lading Page en Astro y Tailwind",
+  "author": "ijquenta",
   "license": "MIT",
   "packageManager": "pnpm@9.13.2",
   "scripts": {

@@ -2,128 +2,127 @@
 # Does not contain meta customizations because it is the homepage and config is already set in the config file
 
 banner:
-  title: 'An <span class="text-accent text-shadow-[0px_5px_15px] shadow-accent/10">Astro</span> Starter <span class="text-secondary"> batteries-included</span>'
+  title: 'Un Mundo de Aprendizaje con <span class="text-secondary text-shadow-[0px_5px_15px] shadow-accent/10">Nuestro Instituto</span>'
   title_size: "text-4xl md:text-6xl"
-  content: "A fully responsive astro starter repo, ideal for simple (yet laborious) content-driven pages or landings."  
+  content: "Un ambiente educativo inclusivo, interactivo y creativo donde las mentes jóvenes pueden desarrollarse y explorar."
   image: /images/logo_v5_xl_pfp.webp
   buttons:
-    - label: Get the Code
-      href: "https://github.com/diego-alfadev/alfadev-astro-starter"
-      target: "_blank"
-      icon: _GitHub
-      addClasses: "w-full bg-gray-900 text-white hover:bg-accent dark:border-white/10 dark:border"
+    - label: Explora Nuestros Programas
+      href: "/changelog"
+      target: "_self"
+      icon: book
+      addClasses: "w-full bg-gray-900 text-white hover:bg-secondary dark:border-white/10 dark:border"
+
 
 sections:
-  - title: Tired of writing the same code over and over again?
-    content: "We've all been there... Setting up the same SEO, theming, and responsive layout boilerplate again and again. Say goodbye to that! <b class='text-accent'>alfadev-astro-starter</b> lets you jump straight into creating, skipping the repetitive groundwork."
+  - title: ¿Listo para aprender algo nuevo? 📚
+    content: "Nuestros programas están diseñados para inspirar curiosidad y fomentar el amor por el aprendizaje. Únete a nosotros y sé parte de una experiencia educativa enriquecedora."
     image: /images/tired-of-writing.webp
 
-  - title: This is not a library
-    content: It's a <b class='text-accent'>ready-to-go template</b>. No steep learning curves or dozens of new dependencies. Just the essentials to build content-driven pages with ease.<br/>If you're familiar with <span class="text-accent font-bold">Astro</span>, you are good to go.
+  - title: Aprende a través de la Creatividad 🎨
+    content: "Nos enfocamos en el aprendizaje práctico, donde la creatividad y la resolución de problemas toman protagonismo. Tu hijo/a tendrá la oportunidad de explorar, crear e innovar en diversas materias."
     image: /images/this-is-not-a-library.webp
 
-  - title: Optimized out of the box
-    content: Lightweight and fast. Packed with <span class="text-accent font-bold">Astro</span>, <span class="text-[#38bdf8] font-bold">tailwind</span> and <span class="text-[#e41c81] font-bold">Sass</span> goodness, so your pages load <b class='text-accent'>blazing fast</b>—right from the start. <br/> All the pages are configured in a way that are SEO-friendly and defined with markdown.
+  - title: Descubre Nuevas Posibilidades
+    content: "Desde artes y ciencias hasta robótica y programación, nuestros programas abren puertas a nuevas experiencias y habilidades que durarán toda la vida."
     image: /images/optimized-out-of-the-box.webp
 
-  - title: Looks great, day or night
-    content: "With <b class='text-accent'>built-in dark theme support</b>, your site will look amazing no matter what time of day your users visit. Or what their eyes prefer.<br/> <br/>Forget convoluted theming systems. alfadev-astro-starter keeps it <b class='text-accent'>simple and extensible</b>, so you can focus on your design and let the code work fori you."
+  - title: Un Ambiente Seguro, Divertido e Inclusivo
+    content: "Garantizamos un espacio acogedor, seguro y de apoyo donde los niños pueden explorar, interactuar y crecer con confianza."
     image: /images/loogs-good.webp
 
 
 ##key features
 features:
-  title: Why <span class="text-accent">alfadev-starter</span>?
-  description: Because every content-driven page needs a lot boilerplate to initialize, and **we provide you with the tools and guidelines** needed to focus on what's important.
+  title: Por que <span class="text-secondary">Elegirnos</span>?
+  description: "Ofrecemos programas únicos que combinan diversión y educación. Aquí te contamos por qué nuestro instituto es la mejor opción."
   feature_list:
     - icon: "box"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Simple
-      content: Avoid Complexity, small yet not useless. Loaded, but <b class="text-text">not overwhelming</b>.
+      title: Aprendizaje Activo
+      content: "Nuestros programas son interactivos, permitiendo que los niños se involucren activamente en su aprendizaje a través del juego y actividades reales."
     - icon: "clock"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Up-to-date
-      content: Using the latest version and best practices of <span class="text-accent font-bold">Astro</span>, <span class="text-[#38bdf8] font-bold">tailwindcss</span> and <span class="text-[#e41c81] font-bold">Sass</span>
-    - icon: "search"  #icon package react-feather-icon [https://feathericons.com/]
-      title: SEO Friendly
-      content: Boost your site's visibility with <b class="text-text">built-in SEO optimizations</b>, including automatic sitemap generation using <a target='blank' href="https://docs.astro.build/es/guides/integrations-guide/sitemap/"><span class="text-accent font-bold underline">astrojs/sitemap</span></a>.
+      title: Programas Actualizados
+      content: Usamos técnicas de enseñanza modernas para asegurarnos de que los <span class="text-accent font-bold">niños</span> siempre estén <span class="text-[#38bdf8] font-bold">aprendiendo</span> contenido <span class="text-[#e41c81] font-bold">relevante</span> y emocionante.
+    - icon: "star"  #icon package react-feather-icon [https://feathericons.com/]
+      title: Ambientes Creativos
+      content: "Nuestras aulas están diseñadas para fomentar la creatividad y el pensamiento crítico, con mucho espacio para la exploración."
     - icon: "plus"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Extendable
-      content: Add or change content just by <b class="text-text">editing markdown files</b>, so it stays in one place regardless of the code.
-    - icon: "coffee"  #icon package react-feather-icon [https://feathericons.com/]
-      title: "Focused"
-      content: Put you effort on what's important, not on small details. Dont worry about <span class="text-shadow-sm shadow-surface-contrast">***that damn shadow***</span>.
+      title: Más Allá del Aula
+      content: "Ofrecemos actividades extracurriculares que enriquecen el aprendizaje y apoyan el desarrollo personal de los niños."
+    - icon: "user"  #icon package react-feather-icon [https://feathericons.com/]
+      title: Apoyo Comunitario
+      content: "Nuestro instituto prospera gracias a la colaboración. Trabajamos estrechamente con las familias para garantizar el éxito de cada niño/a."
     - icon: "tool"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Customizable
-      content: Every corner of the page <b class="text-text">can be easily changed</b> to fit your needs.
+      title: Programas Personalizados
+      content: "Adaptamos las experiencias de aprendizaje a las necesidades de cada niño/a, asegurando que aprovechen al máximo su jornada educativa."
     - icon: "moon"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Dark Mode Support
-      content: Fully supports ***dark theme*** with an easy-to-extend theming system.
+      title: Inclusión y Apoyo
+      content: "Priorizamos la inclusión, asegurándonos de que cada niño/a se sienta valorado y apoyado en su camino de aprendizaje."
     - icon: "feather"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Lightweight
-      content: Fast and efficient. Every asset is optimized to ensure <b class="text-text">minimal load times</b>.
+      title: Diversión Garantizada
+      content: "Nuestro enfoque educativo está centrado en la diversión, asegurándonos de que los niños disfruten aprendiendo todos los días."
     - icon: "layers"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Modular
-      content: Built with ***reusable components*** that simplify adding or editing sections of the page.
+      title: Oportunidades de Aprendizaje Diversas
+      content: "Desde STEM hasta arte, nuestro instituto ofrece una amplia variedad de programas que cubren los intereses de todos los niños."
     - icon: "zap"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Performance-First
-      content: Designed with <b class="text-text">best-in-class performance</b> metrics to improve the user experience.
+      title: Orientados a Resultados
+      content: "Nuestros programas están diseñados para ayudar a los niños a desarrollar habilidades que puedan usar en el mundo real, preparándolos para el éxito."
     - icon: "layout"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Content-Centric
-      content: Focused on delivering content seamlessly, making it ideal for <b class="text-text">portfolios, showcases, or landing pages</b>.
+      title: Enfocados en el Crecimiento
+      content: "Nuestro enfoque principal es fomentar el crecimiento, tanto académico como personal, ayudando a los niños a convertirse en aprendices de por vida."
     - icon: "code"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Developer-Friendly
-      content: Crafted for developers who value ***simplicity, flexibility, and modern*** tools.
-    
+      title: Integración Tecnológica
+      content: "Utilizamos la tecnología para mejorar el aprendizaje, equipando a los niños con las habilidades digitales necesarias en el mundo actual."
 
 
 
 
 #testimonial
 testimonial:
-  title: Our adopters and their clients <ins>have nice things to say</ins> about us
-  description: Or they will, once they taste a drop of **what we've built**
+  title: Nuestros estudiantes y sus familias <ins>tienen cosas maravillosas que decir</ins> sobre nosotros
+  description: "Estamos orgullosos del impacto positivo que hemos tenido en los niños que enseñamos y en las familias que apoyamos."
   testimonial_list:
     - author: Jhon Doe
-      organization: Example Corp
+      organization: Padre de Alex
       rating: five
-      content: "I can't believe this testimonial is autogenerated! But hey, I’d still give it <b class='text-accent'>five stars</b>!"
+      content: "¡Estoy impresionado de lo que mi hijo ha aprendido en este instituto! El enfoque práctico hace que el aprendizaje sea divertido y significativo."
     - author: Jane D. Smith
-      organization: Acme Inc.
+      organization: Madre de Mia
       rating: four
-      content: "Doesn't matter if I exist or not, this project is <b class='text-accent'>truly fantastic</b>. Highly recommend!"
+      content: "Los programas son fantásticos, y mi hija se ha vuelto más confiada y creativa. ¡Lo recomiendo mucho!"
     - author: Bob A. Nonymous
-      organization: FutureTech Labs
+      organization: Padre de Noah
       rating: five
-      content: "Wow, this is so good, I’d recommend it to all my imaginary friends."
+      content: "¡Este instituto es increíble! A mi hijo le encantan las actividades variadas, y he visto una gran mejora en sus habilidades."
     - author: Alice Placeholder
-      organization: Startup Ipsum
+      organization: Madre de Emma
       rating: three
-      content: "If I were real, I’d definitely complain less. But it’s still pretty good!"
+      content: "Excelente programa en general. Me gustaría ver más enfoque en el aprendizaje personalizado."
     - author: Richard Fakenham
-      organization: Lorem Ipsum Ltd.
+      organization: Padre de Lucas
       rating: five
-      content: "Astounding! Even for a made-up person like me, this template <b class='text-accent'>exceeds expectations</b>."
+      content: "Nuestro hijo ha crecido mucho en este instituto. El ambiente inclusivo y de apoyo es increíble."
     - author: Emily Mockson
-      organization: Phantom Co.
+      organization: Madre de Lily
       rating: four
-      content: "No real user said this, but they should! Such a slick and modern experience."
+      content: "Estoy muy contenta de haber elegido este instituto. ¡Mi hija está emocionada de ir a clase cada día!"
     - author: Alex Testworth
-      organization: AlphaBeta Agency
+      organization: Padre de Leo
       rating: five
-      content: "Best autogenerated testimonial I’ve ever seen. 10/10 would fake it again."
+      content: "La mejor experiencia educativa para mi hijo. Puedo ver cómo ha crecido desde que se unió."
     - author: Chris Placeholder
-      # avatar: "/images/users/user-8.png"
-      organization: Ghost Design Studios
+      organization: Madre de Sophia
       rating: four
-      content: "You don’t have to believe me, but you should believe in this product!"
+      content: "¡Nos encanta este instituto! El personal es genial, y nuestro hijo siempre está emocionado de aprender algo nuevo."
 
 
 ## Call to Action
 call_to_action:
-  title: "Because we love <span class='text-accent text-shadow-[0px_5px_15px]' >Astro</span> and <span class='text-[#38bdf8] text-shadow-[0px_5px_15px]'>Tailwind</span>."
-  description: "Save yourself some time (and sanity). Use this template and act like you planned everything from scratch. We won't tell. **Just be sure to leave a star, please.**"
+  title: "Únete a <span class='text-accent text-shadow-[0px_5px_15px]' >Nosotros</span> y Crezcamos <span class='text-[#38bdf8] text-shadow-[0px_5px_15px]'>Juntos</span>."
+  description: "Inscríbete hoy en nuestros programas y brinda a tu hijo/a la oportunidad de descubrir, aprender y crecer en un ambiente inspirador."
   button: 
-    label: "Grab the Starter"
-    href: "https://github.com/diego-alfadev/alfadev-astro-starter"
+    label: "Contactanos"
+    href: "/contact"
     color: accent
 
 ---
