@@ -1,0 +1,49 @@
+---
+import Base from "@/layouts/Base.astro";
+import { motion } from "framer-motion";
+
+// Activa JSX en este archivo
+/* @jsxImportSource react */
+---
+
+<Base entry_keys={["about", "index"]}>
+  <section class="py-16">
+    <div class="container mx-auto px-6 lg:px-16">
+      <div class="text-center">
+        <h1 class="text-4xl font-bold text-blue-700 dark:text-blue-400">¿Dónde Trabajamos?</h1>
+        <p class="mt-2 text-gray-600 dark:text-gray-300 text-lg">
+          Estamos ubicados en el corazón de Villa Adela, El Alto, Bolivia.
+        </p>
+      </div>
+
+      <div class="mt-12">
+        <motion.div
+          className="flex flex-col md:flex-row items-center gap-6"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          client:only="react"
+        >
+          <div class="md:w-1/2 p-6 bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-lg">
+            <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-300">Nuestra Ubicación</h2>
+            <p class="text-gray-700 dark:text-gray-300 mt-2">
+                Iglesia Cristiana Asamblea de Dios EL SHADDAI, en Villa Adela, El Alto, Bolivia. Estamos comprometidos con nuestra comunidad local y trabajamos para mejorar la educación y apoyar a aquellos que más lo necesitan.
+            </p>
+          </div>
+          
+          <div class="md:w-1/2">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d984.0421605286977!2d-68.2133324!3d-16.5249625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edef520741245:0xea1b53ad1d9b0af8!2sIglesia+Cristiana+Asamblea+de+Dios+EL+SHADDAI!5e0!3m2!1ses!2sbo!4v1677251365759!5m2!1ses!2sbo" 
+              width="100%" 
+              height="400" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  </section>
+</Base>

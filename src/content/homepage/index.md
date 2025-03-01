@@ -2,10 +2,11 @@
 # Does not contain meta customizations because it is the homepage and config is already set in the config file
 
 banner:
-  title: 'Un Mundo de Aprendizaje con <span class="text-secondary text-shadow-[0px_5px_15px] shadow-accent/10">Nuestro Instituto</span>'
+  title: 'Habilidades para el <span class="text-secondary text-shadow-[0px_5px_15px] shadow-accent/10">Mundo de Mañana</span> Beca Estudiantil <span class="text-secondary text-shadow-[0px_5px_15px] shadow-accent/10">2025</span>' 
   title_size: "text-4xl md:text-6xl"
   content: "Un ambiente educativo inclusivo, interactivo y creativo donde las mentes jóvenes pueden desarrollarse y explorar."
-  image: /images/logo_v5_xl_pfp.webp
+  # image: /images/logo_v5_xl_pfp.webp
+  image: /images/123.jpg
   buttons:
     - label: Explora Nuestros Programas
       href: "/changelog"
@@ -17,19 +18,19 @@ banner:
 sections:
   - title: ¿Listo para aprender algo nuevo? 📚
     content: "Nuestros programas están diseñados para inspirar curiosidad y fomentar el amor por el aprendizaje. Únete a nosotros y sé parte de una experiencia educativa enriquecedora."
-    image: /images/tired-of-writing.webp
+    image: /images/123.jpg
 
   - title: Aprende a través de la Creatividad 🎨
     content: "Nos enfocamos en el aprendizaje práctico, donde la creatividad y la resolución de problemas toman protagonismo. Tu hijo/a tendrá la oportunidad de explorar, crear e innovar en diversas materias."
-    image: /images/this-is-not-a-library.webp
+    image: /images/123.jpg
 
   - title: Descubre Nuevas Posibilidades
     content: "Desde artes y ciencias hasta robótica y programación, nuestros programas abren puertas a nuevas experiencias y habilidades que durarán toda la vida."
-    image: /images/optimized-out-of-the-box.webp
+    image: /images/123.jpg
 
   - title: Un Ambiente Seguro, Divertido e Inclusivo
     content: "Garantizamos un espacio acogedor, seguro y de apoyo donde los niños pueden explorar, interactuar y crecer con confianza."
-    image: /images/loogs-good.webp
+    image: /images/123.jpg
 
 
 ##key features

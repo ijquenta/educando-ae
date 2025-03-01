@@ -1,0 +1,42 @@
+---
+import Base from "@/layouts/Base.astro";
+import { motion } from "framer-motion";
+
+// Activa JSX en este archivo
+/* @jsxImportSource react */
+
+const images = {
+  anna: "https://b2472105.smushcdn.com/2472105/wp-content/uploads/2023/09/Poses-Perfil-Profesional-Mujeres-ago.-10-2023-1-819x1024.jpg?lossy=1&strip=1&webp=1", // Asegúrate de poner la imagen correcta
+};
+---
+
+<Base entry_keys={["about", "index"]}>
+  <section class="py-16">
+    <div class="container mx-auto px-6 lg:px-16">
+      <div class="text-center">
+        <h1 class="text-4xl font-bold text-blue-700 dark:text-blue-400">Nuestro Equipo</h1>
+        <p class="mt-2 text-gray-600 dark:text-gray-300 text-lg">
+          Conoce a las personas que lideran nuestra misión.
+        </p>
+      </div>
+
+      <div class="mt-12 space-y-12">
+        <!-- Sección Directora General -->
+        <motion.div
+          className="flex flex-col md:flex-row items-center gap-6"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          client:only="react"
+        >
+          <img src={images.anna} alt="Anna Gutierrez Landivar" class="w-full md:w-1/2 rounded-2xl" />
+          <div class="md:w-1/2 p-6 bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-lg">
+            <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-300">Anna Gutierrez Landivar</h2>
+            <p class="text-gray-700 dark:text-gray-300 mt-2">
+                Anna es la Directora General de nuestra organización. Con una vasta experiencia en gestión educativa y un compromiso firme con la mejora de la educación en Bolivia, lidera nuestros esfuerzos para alcanzar una educación inclusiva y de calidad.
+            </p>
+          </div>
+        </motion.div>
+    </div>
+  </section>
+</Base>

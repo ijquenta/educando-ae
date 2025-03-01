@@ -1,0 +1,102 @@
+---
+import Base from "@/layouts/Base.astro";
+import { motion } from "framer-motion";
+
+// Activa JSX en este archivo
+/* @jsxImportSource react */
+
+const images = {
+  mision: "https://childfundbolivia.org/wp-content/uploads/2024/08/CF-Thumbnail-NOSOT-C-533X483.png",
+  valores: "https://childfundbolivia.org/wp-content/uploads/2024/08/CF-Thumbnail-NOSOT-C-524X483.png",
+  vision: "https://childfundbolivia.org/wp-content/uploads/2024/08/CF-Thumbnail-NOSOT-C-497X483.png",
+  estrategia: "https://childfundbolivia.org/wp-content/uploads/2024/08/CF-Thumbnail-NOSOT-C-491X483-2.png",
+};
+---
+
+<Base entry_keys={["about", "index"]}>
+  <section class="py-16">
+    <div class="container mx-auto px-6 lg:px-16">
+      <div class="text-center">
+        <h1 class="text-4xl font-bold text-blue-700 dark:text-blue-400">¿Quiénes Somos?</h1>
+        <p class="mt-2 text-gray-600 dark:text-gray-300 text-lg">
+          Nuestro compromiso con la educación en Bolivia.
+        </p>
+      </div>
+
+      <div class="mt-12 space-y-12">
+        <!-- Sección Misión -->
+        <motion.div
+          className="flex flex-col md:flex-row items-center gap-6"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          client:only="react"
+        >
+          <img src={images.mision} alt="Misión" class="w-full md:w-1/2 rounded-2xl" />
+          <div class="md:w-1/2 p-6 bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-lg">
+            <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-300">Nuestra Misión</h2>
+            <p class="text-gray-700 dark:text-gray-300 mt-2">
+                Asesoría Educativa “Educando” tiene como fin mejorar la educación en Bolivia brindando apoyo a los estudiantes que se encuentra en desventajas socioeconómicas.
+            </p>
+          </div>
+        </motion.div>
+
+        <!-- Sección Valores -->
+        <motion.div
+          className="flex flex-col md:flex-row-reverse items-center gap-6"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          client:only="react"
+        >
+          <img src={images.valores} alt="Valores" class="w-full md:w-1/2 rounded-2xl" />
+          <div class="md:w-1/2 p-6 bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-lg">
+            <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-300">Nuestros Valores</h2>
+            <ul class="text-gray-700 dark:text-gray-300 mt-2 list-disc list-inside">
+              <li>Integridad</li>
+              <li>Mayordomía</li>
+              <li>Paz</li>
+              <li>Excelencia</li>
+              <li>Respeto</li>
+              <li>Solidaridad</li>
+                </ul>
+          </div>
+        </motion.div>
+
+        <!-- Sección Visión -->
+        <motion.div
+          className="flex flex-col md:flex-row items-center gap-6"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          client:only="react"
+        >
+          <img src={images.vision} alt="Visión" class="w-full md:w-1/2 rounded-2xl" />
+          <div class="md:w-1/2 p-6 bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-lg">
+            <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-300">Nuestra Visión</h2>
+            <p class="text-gray-700 dark:text-gray-300 mt-2">
+                Deseamos impactar en toda nuestra nación en el área académica y m nivelar la educación boliviana para los diferentes estratos sociales y crear una igualdad de oportunidades dentro de nuestro Pais.
+            </p>
+          </div>
+        </motion.div>
+
+        <!-- Sección Estrategia -->
+        <motion.div
+          className="flex flex-col md:flex-row-reverse items-center gap-6"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          client:only="react"
+        >
+          <img src={images.estrategia} alt="Estrategia" class="w-full md:w-1/2 rounded-2xl" />
+          <div class="md:w-1/2 p-6 bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-lg">
+            <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-300">Nuestra Estrategia</h2>
+            <p class="text-gray-700 dark:text-gray-300 mt-2">
+                Interesarnos en los problemas y necesidades de la comunidad para que las personas sean fortalecidas en el área educativa.
+            </p>
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  </section>
+</Base>

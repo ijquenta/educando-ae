@@ -1,7 +1,7 @@
 {
   "main": [
     {
-      "name": "Principal",
+      "name": "Inicio",
       "url": "/"
     },
     {
@@ -11,21 +11,39 @@
       "children": [
         {
           "name": "Somos Educando AE",
-          "url": "/features"
+          "url": "/somos-educando-ae"
         },
         {
           "name": "Nuestro Equipo",
-          "url": "/features"
+          "url": "/nuestro-equipo"
         },
         {
-          "name": "Contactanos",
-          "url": "/contact"
+          "name": "¿Dónde Trabajamos?",
+          "url": "/donde-trabajamos"
         }
       ]
     },
     {
       "name": "Qué Hacemos",
-      "url": "/theme"
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Área de trabajo",
+          "url": "/area-trabajo"
+        },
+        {
+          "name": "Programas",
+          "url": "/programas"
+        },
+        {
+          "name": "Campañas",
+          "url": "/campanas"
+        },
+        {
+          "name": "Historias de Éxitos",
+          "url": "/historias-exitos"
+        }
+      ]
     },
     {
       "name": "Actualidad",

@@ -50,7 +50,7 @@ const image_position_classes = (() => {
         image && image_position === "top" && (
           <div class={`${image_position_classes[2]}`}>
             <Image
-              class="w-1/2 mr-auto ml-auto object-contain"
+              class="w-1/2 mr-auto ml-auto object-contain rounded-xl shadow-md transition-all duration-300 hover:scale-105"
               alt="section-image"
               src={image}
               width={500}
@@ -78,7 +78,7 @@ const image_position_classes = (() => {
           image && image_position != "top" && (
             <div class={`${image_position_classes[2]}`}>
               <Image
-                class="w-full object-contain"
+                class="w-full object-contain rounded-xl shadow-md transition-all duration-300 hover:scale-105"
                 alt="section-image"
                 src={image}
                 width={500}
