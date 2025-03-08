@@ -4,43 +4,43 @@ import Base from "@/layouts/Base.astro";
 
 <Base entry_keys={["about", "index"]}>
   <!-- Hero Section -->
-  <section class="relative py-20 bg-indigo-50 dark:bg-indigo-950 text-center overflow-hidden">
+  <section class="relative py-20 text-center overflow-hidden">
     <div class="absolute inset-0 opacity-10 pointer-events-none">
       <div class="w-full h-full bg-[url('https://www.transparenttextures.com/patterns/paper-fibers.png')] dark:bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')]"></div>
     </div>
     <div class="container mx-auto px-4 relative z-10">
-      <h1 class="text-5xl md:text-6xl font-extrabold text-indigo-700 dark:text-indigo-300 motion-preset-fade motion-translate-y-in-[25%] motion-on-scroll hover:scale-105 transition-transform duration-300">
+      <h1 class="text-5xl md:text-6xl font-extrabold text-secondary dark:text-secondary motion-preset-fade motion-translate-y-in-[25%] motion-on-scroll hover:scale-105 transition-transform duration-300">
         Área de Trabajo
       </h1>
-      <p class="mt-4 text-lg text-gray-600 dark:text-gray-300 motion-preset-fade motion-delay-[0.75s] motion-on-scroll hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">
+      <p class="mt-4 text-lg text-gray-600 dark:text-gray-300 motion-preset-fade motion-delay-[0.75s] motion-on-scroll hover:text-secondary dark:hover:text-secondary transition-colors duration-300">
         Transformando la educación en Bolivia con compromiso y pasión.
       </p>
     </div>
   </section>
 
   <!-- Phase 1: ¿Quiénes Somos? -->
-  <section class="py-16 bg-white dark:bg-gray-900">
+  <section class="py-16">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center text-indigo-600 dark:text-indigo-400 mb-12 motion-preset-slide-right motion-on-scroll hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors duration-300">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-secondary dark:text-secondary mb-12 motion-preset-slide-right motion-on-scroll hover:text-secondary dark:hover:text-sencondary transition-colors duration-300">
         ¿Quiénes Somos?
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="p-6 rounded-lg bg-indigo-100 dark:bg-indigo-800/30 motion-scale-in-[0.5] motion-rotate-in-[-10deg] motion-blur-in-[10px] motion-delay-[0.75s]/rotate motion-delay-[0.75s]/blur motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
+        <div class="p-6 rounded-lg motion-scale-in-[0.5] motion-rotate-in-[-10deg] motion-blur-in-[10px] motion-delay-[0.75s]/rotate motion-delay-[0.75s]/blur motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
           <img src="https://cdn.bolivia.com/sdi/2018/04/12/google-celebra-con-un-doodle-el-dia-del-nino-boliviano-626399.jpg" alt="Niños bolivianos" class="w-full h-48 object-cover rounded-lg mb-4" />
-          <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Misión</h3>
+          <h3 class="text-xl font-semibold  mb-4 hover:text-secondary dark:hover:text-secondary transition-colors duration-300">Misión</h3>
           <p class="text-gray-700 dark:text-gray-200">
             Mejorar la educación en Bolivia apoyando directamente a estudiantes en desventaja socioeconómica, dotándolos de herramientas para un futuro brillante.
           </p>
         </div>
-        <div class="p-6 rounded-lg bg-indigo-100 dark:bg-indigo-800/30 motion-preset-pop motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
+        <div class="p-6 rounded-lg motion-preset-pop motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
           <img src="https://www.unicef.org/bolivia/sites/unicef.org.bolivia/files/styles/hero_extended/public/bol_todos%20los%20ninos%20aprenden.jpg.webp?itok=jPODCSCB" alt="Comunidad educativa" class="w-full h-48 object-cover rounded-lg mb-4" />
-          <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Visión</h3>
+          <h3 class="text-xl font-semibold mb-4 hover:text-secondary dark:hover:text-secondary transition-colors duration-300">Visión</h3>
           <p class="text-gray-700 dark:text-gray-200">
             Transformar la educación nacional, eliminando barreras sociales y creando igualdad de oportunidades para todos los estudiantes.
           </p>
         </div>
-        <div class="p-6 rounded-lg bg-indigo-100 dark:bg-indigo-800/30 motion-preset-seesaw motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
-          <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Valores</h3>
+        <div class="p-6 rounded-lg motion-preset-seesaw motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
+          <h3 class="text-xl font-semibold  mb-4 hover:text-secondary dark:hover:text-secondary transition-colors duration-300">Valores</h3>
           <ul class="text-gray-700 dark:text-gray-200 list-disc list-inside">
             <li>Integridad en cada acción.</li>
             <li>Excelencia en cada proyecto.</li>
@@ -49,9 +49,9 @@ import Base from "@/layouts/Base.astro";
           </ul>
           <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Valores" class="mt-4 w-full h-48 object-cover rounded-lg" />
         </div>
-        <div class="p-6 rounded-lg bg-indigo-100 dark:bg-indigo-800/30 motion-translate-x-in-[-25%] motion-translate-y-in-[25%] motion-opacity-in-[0%] motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
+        <div class="p-6 rounded-lg motion-translate-x-in-[-25%] motion-translate-y-in-[25%] motion-opacity-in-[0%] motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL_4j-_02XK_NXQ6EZ8hKNQoiVq_GyNMfB1Q&s" alt="Docentes en acción" class="w-full h-48 object-cover rounded-lg mb-4" />
-          <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Estrategia</h3>
+          <h3 class="text-xl font-semibold  mb-4 hover:text-secondary dark:hover:text-secondary transition-colors duration-300">Estrategia</h3>
           <p class="text-gray-700 dark:text-gray-200">
             Comprendemos las necesidades de la comunidad para diseñar soluciones educativas sostenibles que empoderen a todos.
           </p>
@@ -61,84 +61,84 @@ import Base from "@/layouts/Base.astro";
   </section>
 
   <!-- Phase 2: Educación en Bolivia -->
-  <section class="py-16 bg-gray-100 dark:bg-gray-800 relative">
+  <section class="py-16 relative">
     <div class="absolute inset-0 opacity-20 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/diagonal-lines.png')]"></div>
     <div class="container mx-auto px-4 relative z-10">
-      <h2 class="text-3xl md:text-4xl font-bold text-center text-indigo-600 dark:text-indigo-400 mb-12 motion-preset-slide-right motion-on-scroll hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors duration-300">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-secondary dark:text-secondary mb-12 motion-preset-slide-right motion-on-scroll hover:text-secondary dark:hover:text-sencondary transition-colors duration-300">
         Educación en Bolivia: Una Razón de Ser
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="p-6 motion-scale-in-[0.5] motion-duration-[0.35s] motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
           <img src="https://images.unsplash.com/photo-1621274403997-37aace184f49?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Infraestructura" class="w-full h-48 object-cover rounded-lg mb-4" />
-          <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Infraestructura Insuficiente</h3>
+          <h3 class="text-xl font-semibold  mb-4 hover:text-secondary dark:hover:text-secondary transition-colors duration-300">Infraestructura Insuficiente</h3>
           <p class="text-gray-700 dark:text-gray-200">
             Muchas escuelas, especialmente en áreas rurales, tienen infraestructuras deterioradas, afectando el ambiente de aprendizaje.
           </p>
         </div>
         <div class="p-6 motion-scale-in-[0.5] motion-duration-[0.35s] motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
           <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Financiamiento" class="w-full h-48 object-cover rounded-lg mb-4" />
-          <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Bajo Financiamiento</h3>
+          <h3 class="text-xl font-semibold  mb-4 hover:text-secondary dark:hover:text-secondary transition-colors duration-300">Bajo Financiamiento</h3>
           <p class="text-gray-700 dark:text-gray-200">
             El presupuesto limitado no cubre salarios, materiales ni mantenimiento, impactando la calidad educativa.
           </p>
         </div>
         <div class="p-6 motion-rotate-in-[-10deg] motion-blur-in-[5px] motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
           <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Capacitación" class="w-full h-48 object-cover rounded-lg mb-4" />
-          <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Capacitación Inadecuada</h3>
+          <h3 class="text-xl font-semibold  mb-4 hover:text-secondary dark:hover:text-secondary transition-colors duration-300">Capacitación Inadecuada</h3>
           <p class="text-gray-700 dark:text-gray-200">
             Docentes carecen de formación continua y hay desigualdades regionales en acceso a desarrollo profesional.
           </p>
         </div>
       </div>
-      <blockquote class="mt-8 text-center text-gray-600 dark:text-gray-300 italic max-w-3xl mx-auto motion-preset-fade motion-on-scroll hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">
+      <blockquote class="mt-8 text-center text-gray-600 dark:text-gray-300 italic max-w-3xl mx-auto motion-preset-fade motion-on-scroll hover:text-secondary dark:hover:text-secondary transition-colors duration-300">
         “La deficiencia en el nivel de enseñanza en Bolivia impide la igualdad académica, limitando el potencial profesional de los estudiantes.” – Christian Silva
       </blockquote>
     </div>
   </section>
 
   <!-- Phase 3: Nuestra Respuesta -->
-  <section class="py-16 bg-white dark:bg-gray-900">
+  <section class="py-16">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center text-indigo-600 dark:text-indigo-400 mb-12 motion-preset-slide-right motion-on-scroll hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors duration-300">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-secondary dark:text-secondary mb-12 motion-preset-slide-right motion-on-scroll hover:text-secondary dark:hover:text-sencondary transition-colors duration-300">
         ¡Nuestra Respuesta!
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="p-6 rounded-lg bg-indigo-50 dark:bg-indigo-900/20 relative overflow-hidden motion-preset-bounce motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
+        <div class="p-6 rounded-lg relative overflow-hidden motion-preset-bounce motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
           <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/circles.png')]"></div>
           <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Docentes" class="w-full h-48 object-cover rounded-lg mb-4" />
-          <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4 relative z-10 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Docentes Calificados</h3>
+          <h3 class="text-xl font-semibold  mb-4 relative z-10 hover:text-secondary dark:hover:text-secondary transition-colors duration-300">Docentes Calificados</h3>
           <p class="text-gray-700 dark:text-gray-200 relative z-10">
             Programas de desarrollo profesional continuo para docentes con metodologías inclusivas.
           </p>
         </div>
-        <div class="p-6 rounded-lg bg-indigo-50 dark:bg-indigo-900/20 relative overflow-hidden motion-preset-pop motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
+        <div class="p-6 rounded-lg relative overflow-hidden motion-preset-pop motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
           <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/circles.png')]"></div>
           <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Currículo" class="w-full h-48 object-cover rounded-lg mb-4" />
-          <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4 relative z-10 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Currículo Inclusivo</h3>
+          <h3 class="text-xl font-semibold  mb-4 relative z-10 hover:text-secondary dark:hover:text-secondary transition-colors duration-300">Currículo Inclusivo</h3>
           <p class="text-gray-700 dark:text-gray-200 relative z-10">
             Currículo relevante, enfocado en diversidad y habilidades críticas, creativas y tecnológicas.
           </p>
         </div>
-        <div class="p-6 rounded-lg bg-indigo-50 dark:bg-indigo-900/20 relative overflow-hidden motion-scale-in-[0.5] motion-duration-[0.53s]/scale motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
+        <div class="p-6 rounded-lg relative overflow-hidden motion-scale-in-[0.5] motion-duration-[0.53s]/scale motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
           <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/circles.png')]"></div>
           <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Inclusión" class="w-full h-48 object-cover rounded-lg mb-4" />
-          <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4 relative z-10 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Educación Inclusiva</h3>
+          <h3 class="text-xl font-semibold  mb-4 relative z-10 hover:text-secondary dark:hover:text-secondary transition-colors duration-300">Educación Inclusiva</h3>
           <p class="text-gray-700 dark:text-gray-200 relative z-10">
             Políticas y materiales adaptados para estudiantes con discapacidades y minorías.
           </p>
         </div>
-        <div class="p-6 rounded-lg bg-indigo-50 dark:bg-indigo-900/20 relative overflow-hidden motion-translate-x-in-[-25%] motion-duration-[0.63s]/translate motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
+        <div class="p-6 rounded-lg relative overflow-hidden motion-translate-x-in-[-25%] motion-duration-[0.63s]/translate motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
           <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/circles.png')]"></div>
           <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Comunidad" class="w-full h-48 object-cover rounded-lg mb-4" />
-          <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4 relative z-10 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Participación Comunitaria</h3>
+          <h3 class="text-xl font-semibold  mb-4 relative z-10 hover:text-secondary dark:hover:text-secondary transition-colors duration-300">Participación Comunitaria</h3>
           <p class="text-gray-700 dark:text-gray-200 relative z-10">
             Talleres y decisiones colaborativas para involucrar a padres y comunidades.
           </p>
         </div>
-        <div class="p-6 rounded-lg bg-indigo-50 dark:bg-indigo-900/20 relative overflow-hidden motion-preset-expand motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
+        <div class="p-6 rounded-lg relative overflow-hidden motion-preset-expand motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
           <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/circles.png')]"></div>
           <img src="https://images.unsplash.com/photo-1511629091441-ee46146481b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Apoyo" class="w-full h-48 object-cover rounded-lg mb-4" />
-          <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4 relative z-10 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Apoyo y Refuerzo</h3>
+          <h3 class="text-xl font-semibold  mb-4 relative z-10 hover:text-secondary dark:hover:text-secondary transition-colors duration-300">Apoyo y Refuerzo</h3>
           <p class="text-gray-700 dark:text-gray-200 relative z-10">
             Tutorías y actividades extracurriculares para apoyar el aprendizaje.
           </p>
@@ -148,47 +148,47 @@ import Base from "@/layouts/Base.astro";
   </section>
 
   <!-- Phase 4: Habilidades para el Mundo de Mañana -->
-  <section class="py-16 bg-gray-100 dark:bg-gray-800 relative">
+  <section class="py-16 relative">
     <div class="absolute inset-0 opacity-20 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/diagonal-lines.png')]"></div>
     <div class="container mx-auto px-4 relative z-10">
-      <h2 class="text-3xl md:text-4xl font-bold text-center text-indigo-600 dark:text-indigo-400 mb-12 motion-preset-slide-right motion-on-scroll hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors duration-300">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-secondary dark:text-secondary mb-12 motion-preset-slide-right motion-on-scroll hover:text-secondary dark:hover:text-sencondary transition-colors duration-300">
         ¡Habilidades para el Mundo de Mañana!
       </h2>
-      <p class="text-center text-gray-700 dark:text-gray-200 mb-8 motion-preset-fade motion-on-scroll hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">
+      <p class="text-center text-gray-700 dark:text-gray-200 mb-8 motion-preset-fade motion-on-scroll hover:text-secondary dark:hover:text-secondary transition-colors duration-300">
         Materias, seminarios y talleres para un futuro brillante.
       </p>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="p-6 rounded-lg bg-indigo-50 dark:bg-indigo-900/20 motion-preset-bounce motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
+        <div class="p-6 rounded-lg motion-preset-bounce motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
           <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Inteligencia Emocional" class="w-full h-48 object-cover rounded-lg mb-4" />
-          <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Inteligencia Emocional</h3>
+          <h3 class="text-xl font-semibold  mb-4 hover:text-secondary dark:hover:text-secondary transition-colors duration-300">Inteligencia Emocional</h3>
           <p class="text-gray-700 dark:text-gray-200">
             Seminario sobre la relevancia de gestionar emociones para el desarrollo personal y profesional.
           </p>
         </div>
-        <div class="p-6 rounded-lg bg-indigo-50 dark:bg-indigo-900/20 motion-scale-in-[0.5] motion-rotate-in-[-10deg] motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
+        <div class="p-6 rounded-lg motion-scale-in-[0.5] motion-rotate-in-[-10deg] motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
           <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Inteligencias Múltiples" class="w-full h-48 object-cover rounded-lg mb-4" />
-          <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Inteligencias Múltiples</h3>
+          <h3 class="text-xl font-semibold  mb-4 hover:text-secondary dark:hover:text-secondary transition-colors duration-300">Inteligencias Múltiples</h3>
           <p class="text-gray-700 dark:text-gray-200">
             Aplicación de la teoría de Gardner para un aprendizaje inclusivo y desarrollo integral.
           </p>
         </div>
-        <div class="p-6 rounded-lg bg-indigo-50 dark:bg-indigo-900/20 motion-preset-pop motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
+        <div class="p-6 rounded-lg motion-preset-pop motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
           <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Valores y Ética" class="w-full h-48 object-cover rounded-lg mb-4" />
-          <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Valores y Ética</h3>
+          <h3 class="text-xl font-semibold  mb-4 hover:text-secondary dark:hover:text-secondary transition-colors duration-300">Valores y Ética</h3>
           <p class="text-gray-700 dark:text-gray-200">
             Reflexión sobre valores para una sociedad justa y responsable.
           </p>
         </div>
-        <div class="p-6 rounded-lg bg-indigo-50 dark:bg-indigo-900/20 motion-translate-x-in-[-25%] motion-translate-y-in-[25%] motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
+        <div class="p-6 rounded-lg  motion-translate-x-in-[-25%] motion-translate-y-in-[25%] motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
           <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Oratoria y Liderazgo" class="w-full h-48 object-cover rounded-lg mb-4" />
-          <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Oratoria y Liderazgo</h3>
+          <h3 class="text-xl font-semibold  mb-4 hover:text-secondary dark:hover:text-secondary transition-colors duration-300">Oratoria y Liderazgo</h3>
           <p class="text-gray-700 dark:text-gray-200">
             Desarrollo de habilidades para comunicar e influir positivamente.
           </p>
         </div>
-        <div class="p-6 rounded-lg bg-indigo-50 dark:bg-indigo-900/20 motion-preset-expand motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
+        <div class="p-6 rounded-lg  motion-preset-expand motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
           <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Nivelación Académica" class="w-full h-48 object-cover rounded-lg mb-4" />
-          <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Nivelación Académica</h3>
+          <h3 class="text-xl font-semibold  mb-4 hover:text-secondary dark:hover:text-secondary transition-colors duration-300">Nivelación Académica</h3>
           <p class="text-gray-700 dark:text-gray-200">
             Estrategias para el éxito en el aprendizaje avanzado universitario.
           </p>
@@ -198,32 +198,32 @@ import Base from "@/layouts/Base.astro";
   </section>
 
   <!-- Phase 5: Una Llave para el Éxito del Mañana -->
-  <section class="py-16 bg-white dark:bg-gray-900">
+  <section class="py-16">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold text-center text-indigo-600 dark:text-indigo-400 mb-12 motion-preset-slide-right motion-on-scroll hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors duration-300">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-secondary dark:text-secondary mb-12 motion-preset-slide-right motion-on-scroll hover:text-secondary dark:hover:text-sencondary transition-colors duration-300">
         ¿Una Llave para el Éxito del Mañana?
       </h2>
-      <p class="text-center text-gray-700 dark:text-gray-200 mb-8 motion-preset-fade motion-on-scroll hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">
+      <p class="text-center text-gray-700 dark:text-gray-200 mb-8 motion-preset-fade motion-on-scroll hover:text-secondary dark:hover:text-secondary transition-colors duration-300">
         Lectura Neurometal: Habilidades avanzadas para el futuro.
       </p>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="p-6 rounded-lg bg-indigo-100 dark:bg-indigo-800/30 motion-scale-in-[0.5] motion-blur-in-[10px] motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
+        <div class="p-6 rounded-lg  motion-scale-in-[0.5] motion-blur-in-[10px] motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
           <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Lectura Rápida" class="w-full h-48 object-cover rounded-lg mb-4" />
-          <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Lectura Ultraveloz</h3>
+          <h3 class="text-xl font-semibold  mb-4 hover:text-secondary dark:hover:text-secondary transition-colors duration-300">Lectura Ultraveloz</h3>
           <p class="text-gray-700 dark:text-gray-200">
             Aprende a leer hasta 1,000 palabras por minuto con comprensión crítica en 8 meses.
           </p>
         </div>
-        <div class="p-6 rounded-lg bg-indigo-100 dark:bg-indigo-800/30 motion-preset-pop motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
+        <div class="p-6 rounded-lg  motion-preset-pop motion-on-scroll hover:shadow-lg hover:scale-105 transition-all duration-300">
           <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Ventaja Competitiva" class="w-full h-48 object-cover rounded-lg mb-4" />
-          <h3 class="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">Ventaja Competitiva</h3>
+          <h3 class="text-xl font-semibold  mb-4 hover:text-secondary dark:hover:text-secondary transition-colors duration-300">Ventaja Competitiva</h3>
           <p class="text-gray-700 dark:text-gray-200">
             Optimiza tiempo y adapta habilidades al ritmo del mundo moderno.
           </p>
         </div>
       </div>
       <div class="mt-8 text-center motion-preset-bounce motion-on-scroll">
-        <a href="/contact" class="inline-block bg-indigo-600 dark:bg-indigo-500 text-white px-8 py-3 rounded-full hover:bg-indigo-700 dark:hover:bg-indigo-600 transition-colors duration-300 text-lg font-semibold hover:scale-105">
+        <a href="/contact" class="inline-block bg-secondary dark:bg-secondary text-white px-8 py-3 rounded-full hover:bg-secondary dark:hover:bg-secondary transition-colors duration-300 text-lg font-semibold hover:scale-105">
           Únete al Programa
         </a>
       </div>

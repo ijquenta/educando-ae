@@ -5,45 +5,45 @@ const sections = [
   {
     title: "Apoya Nuestra Misión",
     content: "Tu donación transforma la educación en Bolivia, brindando oportunidades a estudiantes y comunidades vulnerables. Cada aporte cuenta para construir un futuro más equitativo.",
-    title_size: "text-5xl md:text-6xl font-extrabold text-indigo-700 dark:text-indigo-300",
+    title_size: "text-5xl md:text-6xl font-extrabold text-secondary dark:text-sencondary",
     buttons: [
-      { text: "Dona Ahora", id: "modal-donar", class: "bg-indigo-600 text-white px-8 py-3 rounded-full hover:bg-indigo-700 dark:hover:bg-indigo-600 transition-all duration-300 text-lg font-semibold" },
+      { text: "Dona Ahora", id: "modal-donar", class: "bg-secondary text-white px-8 py-3 rounded-full hover:bg-secondary dark:hover:bg-secondary transition-all duration-300 text-lg font-semibold" },
     ],
   },
   {
     title: "Impacto de Tu Donación",
     content: "Con tu apoyo, financiamos programas de formación docente, materiales educativos inclusivos y talleres comunitarios que empoderan a estudiantes y familias.",
-    title_size: "text-3xl md:text-4xl font-bold text-indigo-600 dark:text-indigo-400",
+    title_size: "text-3xl md:text-4xl font-bold text-sencondary dark:text-secondary",
     image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60",
     buttons: [
-      { text: "Conoce Más", href: "/impacto", class: "bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition-all duration-300" },
+      { text: "Conoce Más", href: "/impacto", class: "bg-secondary text-white px-6 py-2 rounded-full hover:bg-secondary transition-all duration-300" },
     ],
   },
   {
     title: "Cómo Puedes Ayudar",
     content: "Elige donar una sola vez o hazte un donante recurrente. Cada contribución, grande o pequeña, nos acerca a superar la desigualdad educativa.",
-    title_size: "text-3xl md:text-4xl font-bold text-indigo-600 dark:text-indigo-400",
+    title_size: "text-3xl md:text-4xl font-bold text-sencondary dark:text-secondary",
     image: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60",
     buttons: [
-      { text: "Explora Opciones de Donación", id: "modal-ayudar", class: "bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition-all duration-300" },
+      { text: "Explora Opciones de Donación", id: "modal-ayudar", class: "bg-secondary text-white px-6 py-2 rounded-full hover:bg-secondary transition-all duration-300" },
     ],
   },
   {
     title: "Historias de Cambio",
     content: "Gracias a donantes como tú, estudiantes de áreas rurales ahora tienen acceso a educación de calidad. Conoce sus historias y sé parte del cambio.",
-    title_size: "text-3xl md:text-4xl font-bold text-indigo-600 dark:text-indigo-400",
+    title_size: "text-3xl md:text-4xl font-bold text-sencondary dark:text-secondary",
     image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60",
     buttons: [
-      { text: "Ver Historias", href: "/historias", class: "bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition-all duration-300" },
+      { text: "Ver Historias", href: "/historias", class: "bg-secondary text-white px-6 py-2 rounded-full hover:bg-secondary transition-all duration-300" },
     ],
   },
   {
     title: "Haz tu Donación",
     content: "Selecciona un monto o personaliza tu aporte. Juntos, podemos hacer una diferencia duradera en la educación boliviana.",
-    title_size: "text-3xl md:text-4xl font-bold text-indigo-600 dark:text-indigo-400",
+    title_size: "text-3xl md:text-4xl font-bold text-sencondary dark:text-secondary",
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60",
     buttons: [
-      { text: "Dona Ahora", id: "modal-haz-donacion", class: "bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition-all duration-300" },
+      { text: "Dona Ahora", id: "modal-haz-donacion", class: "bg-secondary text-white px-6 py-2 rounded-full hover:bg-secondary transition-all duration-300" },
     ],
   },
 ];
@@ -54,15 +54,15 @@ const qrUrl = "https://paypal.me/tuusuario?message=true";
 
 <Base entry_keys={["about", "index"]}>
   <!-- Hero Section -->
-  <section class="relative py-20 bg-indigo-50 dark:bg-indigo-950 text-center overflow-hidden">
+  <section class="relative py-20 text-center overflow-hidden">
     <div class="absolute inset-0 opacity-10 pointer-events-none">
       <div class="w-full h-full bg-[url('https://www.transparenttextures.com/patterns/paper-fibers.png')] dark:bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')]"></div>
     </div>
     <div class="container mx-auto px-4 relative z-10">
-      <h1 class={`${sections[0].title_size} motion-preset-fade motion-on-scroll hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300`}>
+      <h1 class={`${sections[0].title_size} motion-preset-fade motion-on-scroll hover:text-sencondary dark:hover:text-sencondary transition-colors duration-300`}>
         {sections[0].title}
       </h1>
-      <p class="mt-6 text-lg text-gray-700 dark:text-gray-200 motion-preset-fade motion-delay-[0.75s] motion-on-scroll hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">
+      <p class="mt-6 text-lg text-gray-700 dark:text-gray-200 motion-preset-fade motion-delay-[0.75s] motion-on-scroll hover:text-sencondary dark:hover:text-sencondary transition-colors duration-300">
         {sections[0].content}
       </p>
       <div class="mt-8 motion-preset-bounce motion-delay-[1s] motion-on-scroll">
@@ -76,14 +76,14 @@ const qrUrl = "https://paypal.me/tuusuario?message=true";
   </section>
 
   <!-- Impacto de Tu Donación -->
-  <section class="py-16 bg-white dark:bg-gray-900">
+  <section class="py-16 ">
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div class="motion-preset-slide-right motion-on-scroll">
-          <h2 class={`${sections[1].title_size} mb-6 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors duration-300`}>
+          <h2 class={`${sections[1].title_size} mb-6 hover:text-secondary dark:hover:text-sencondary transition-colors duration-300`}>
             {sections[1].title}
           </h2>
-          <p class="text-gray-700 dark:text-gray-200 motion-preset-fade motion-delay-[0.2s] motion-on-scroll hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">
+          <p class="text-gray-700 dark:text-gray-200 motion-preset-fade motion-delay-[0.2s] motion-on-scroll hover:text-sencondary dark:hover:text-sencondary transition-colors duration-300">
             {sections[1].content}
           </p>
           <div class="mt-8 motion-preset-bounce motion-delay-[0.4s] motion-on-scroll">
@@ -100,15 +100,15 @@ const qrUrl = "https://paypal.me/tuusuario?message=true";
   </section>
 
   <!-- Cómo Puedes Ayudar -->
-  <section class="py-16 bg-gray-100 dark:bg-gray-800 relative">
+  <section class="py-16 relative">
     <div class="absolute inset-0 opacity-20 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/diagonal-lines.png')]"></div>
     <div class="container mx-auto px-4 relative z-10">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center flex-row-reverse">
         <div class="motion-preset-slide-right motion-on-scroll">
-          <h2 class={`${sections[2].title_size} mb-6 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors duration-300`}>
+          <h2 class={`${sections[2].title_size} mb-6 hover:text-secondary dark:hover:text-sencondary transition-colors duration-300`}>
             {sections[2].title}
           </h2>
-          <p class="text-gray-700 dark:text-gray-200 motion-preset-fade motion-delay-[0.2s] motion-on-scroll hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">
+          <p class="text-gray-700 dark:text-gray-200 motion-preset-fade motion-delay-[0.2s] motion-on-scroll hover:text-sencondary dark:hover:text-sencondary transition-colors duration-300">
             {sections[2].content}
           </p>
           <div class="mt-8 motion-preset-bounce motion-delay-[0.4s] motion-on-scroll">
@@ -127,14 +127,14 @@ const qrUrl = "https://paypal.me/tuusuario?message=true";
   </section>
 
   <!-- Historias de Cambio -->
-  <section class="py-16 bg-white dark:bg-gray-900">
+  <section class="py-16 ">
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div class="motion-preset-slide-right motion-on-scroll">
-          <h2 class={`${sections[3].title_size} mb-6 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors duration-300`}>
+          <h2 class={`${sections[3].title_size} mb-6 hover:text-secondary dark:hover:text-sencondary transition-colors duration-300`}>
             {sections[3].title}
           </h2>
-          <p class="text-gray-700 dark:text-gray-200 motion-preset-fade motion-delay-[0.2s] motion-on-scroll hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">
+          <p class="text-gray-700 dark:text-gray-200 motion-preset-fade motion-delay-[0.2s] motion-on-scroll hover:text-sencondary dark:hover:text-sencondary transition-colors duration-300">
             {sections[3].content}
           </p>
           <div class="mt-8 motion-preset-bounce motion-delay-[0.4s] motion-on-scroll">
@@ -151,15 +151,15 @@ const qrUrl = "https://paypal.me/tuusuario?message=true";
   </section>
 
   <!-- Haz tu Donación -->
-  <section class="py-16 bg-gray-100 dark:bg-gray-800 relative">
+  <section class="py-16  relative">
     <div class="absolute inset-0 opacity-20 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/diagonal-lines.png')]"></div>
     <div class="container mx-auto px-4 relative z-10">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center flex-row-reverse">
         <div class="motion-preset-slide-right motion-on-scroll">
-          <h2 class={`${sections[4].title_size} mb-6 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors duration-300`}>
+          <h2 class={`${sections[4].title_size} mb-6 hover:text-secondary dark:hover:text-sencondary transition-colors duration-300`}>
             {sections[4].title}
           </h2>
-          <p class="text-gray-700 dark:text-gray-200 motion-preset-fade motion-delay-[0.2s] motion-on-scroll hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300">
+          <p class="text-gray-700 dark:text-gray-200 motion-preset-fade motion-delay-[0.2s] motion-on-scroll hover:text-sencondary dark:hover:text-sencondary transition-colors duration-300">
             {sections[4].content}
           </p>
           <div class="mt-8 motion-preset-bounce motion-delay-[0.4s] motion-on-scroll">
@@ -176,7 +176,7 @@ const qrUrl = "https://paypal.me/tuusuario?message=true";
       </div>
       <!-- Código QR -->
       <div class="mt-12 text-center motion-preset-fade motion-delay-[0.8s] motion-on-scroll">
-        <h3 class="text-xl font-semibold text-indigo-600 dark:text-indigo-400 mb-4 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors duration-300">
+        <h3 class="text-xl font-semibold text-sencondary dark:text-secondary mb-4 hover:text-secondary dark:hover:text-sencondary transition-colors duration-300">
           Escanea para Donar y Dejar un Mensaje
         </h3>
         <img src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(qrUrl)}`} alt="QR para donar" class="mx-auto rounded-lg shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg" />
@@ -189,29 +189,29 @@ const qrUrl = "https://paypal.me/tuusuario?message=true";
 
   <!-- Modales -->
   <dialog id="modal-donar" class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-lg max-w-md w-full">
-    <h3 class="text-2xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">Elige tu Método de Donación</h3>
+    <h3 class="text-2xl font-bold text-sencondary dark:text-secondary mb-4">Elige tu Método de Donación</h3>
     <p class="text-gray-700 dark:text-gray-200 mb-6">Apoya nuestra misión con cualquier monto desde cualquier parte del mundo.</p>
     <div class="flex flex-col gap-4">
       <a href="https://paypal.me/tuusuario" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 text-center">Dona con PayPal</a>
       <a href="https://donate.stripe.com/test_xxxx" class="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition-all duration-300 text-center">Dona con Stripe</a>
       <a href="bitcoin:tu_direccion_bitcoin" class="bg-orange-600 text-white px-6 py-2 rounded-full hover:bg-orange-700 transition-all duration-300 text-center">Dona con Bitcoin</a>
     </div>
-    <button type="button" onclick="document.getElementById('modal-donar').close()" class="mt-6 text-indigo-600 dark:text-indigo-400 hover:underline">Cerrar</button>
+    <button type="button" onclick="document.getElementById('modal-donar').close()" class="mt-6 text-sencondary dark:text-secondary hover:underline">Cerrar</button>
   </dialog>
 
   <dialog id="modal-ayudar" class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-lg max-w-md w-full">
-    <h3 class="text-2xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">Opciones de Donación</h3>
+    <h3 class="text-2xl font-bold text-sencondary dark:text-secondary mb-4">Opciones de Donación</h3>
     <p class="text-gray-700 dark:text-gray-200 mb-6">Elige cómo deseas contribuir a nuestra causa.</p>
     <div class="flex flex-col gap-4">
       <a href="https://paypal.me/tuusuario?recurring=true" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 text-center">Dona Mensualmente (PayPal)</a>
       <a href="https://donate.stripe.com/test_xxxx" class="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition-all duration-300 text-center">Dona Una Vez (Stripe)</a>
       <a href="bitcoin:tu_direccion_bitcoin" class="bg-orange-600 text-white px-6 py-2 rounded-full hover:bg-orange-700 transition-all duration-300 text-center">Dona con Bitcoin</a>
     </div>
-    <button type="button" onclick="document.getElementById('modal-ayudar').close()" class="mt-6 text-indigo-600 dark:text-indigo-400 hover:underline">Cerrar</button>
+    <button type="button" onclick="document.getElementById('modal-ayudar').close()" class="mt-6 text-sencondary dark:text-secondary hover:underline">Cerrar</button>
   </dialog>
 
   <dialog id="modal-haz-donacion" class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-lg max-w-md w-full">
-    <h3 class="text-2xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">Selecciona tu Donación</h3>
+    <h3 class="text-2xl font-bold text-sencondary dark:text-secondary mb-4">Selecciona tu Donación</h3>
     <p class="text-gray-700 dark:text-gray-200 mb-6">Escoge un monto o personaliza tu aporte.</p>
     <div class="flex flex-col gap-4">
       <a href="https://paypal.me/tuusuario?amount=50" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 text-center">Dona 50 Bs (PayPal)</a>
@@ -219,7 +219,7 @@ const qrUrl = "https://paypal.me/tuusuario?message=true";
       <a href="https://donate.stripe.com/test_xxxx" class="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition-all duration-300 text-center">Dona con Stripe</a>
       <a href="bitcoin:tu_direccion_bitcoin" class="bg-orange-600 text-white px-6 py-2 rounded-full hover:bg-orange-700 transition-all duration-300 text-center">Dona con Bitcoin</a>
     </div>
-    <button type="button" onclick="document.getElementById('modal-haz-donacion').close()" class="mt-6 text-indigo-600 dark:text-indigo-400 hover:underline">Cerrar</button>
+    <button type="button" onclick="document.getElementById('modal-haz-donacion').close()" class="mt-6 text-sencondary dark:text-secondary hover:underline">Cerrar</button>
   </dialog>
 
   <!-- Intersection Observer Script -->
