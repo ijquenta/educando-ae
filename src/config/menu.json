@@ -20,6 +20,14 @@
         {
           "name": "¿Dónde Trabajamos?",
           "url": "/donde-trabajamos"
+        },
+        {
+          "name": "Impacto",
+          "url": "/impacto"
+        },
+        {
+          "name": "Historias",
+          "url": "/historias"
         }
       ]
     },
@@ -36,12 +44,12 @@
           "url": "/programas"
         },
         {
-          "name": "Campañas",
-          "url": "/campanas"
+          "name": "Historial",
+          "url": "/changelog"
         },
         {
-          "name": "Historias de Éxitos",
-          "url": "/historias-exitos"
+          "name": "Campañas",
+          "url": "/campanas"
         }
       ]
     },
@@ -54,13 +62,10 @@
       "url": "",
       "hasChildren": true,
       "children": [
+       
         {
-          "name": "Changelog",
-          "url": "/changelog"
-        },
-        {
-          "name": "Does not exist",
-          "url": "/does-not-exist"
+          "name": "Donar",
+          "url": "/donar"
         }
       ]
     }

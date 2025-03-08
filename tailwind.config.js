@@ -63,6 +63,7 @@ module.exports = {
     },
   },
   plugins: [
+    require("tailwindcss-motion"),
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
     require("tailwind-bootstrap-grid")({
