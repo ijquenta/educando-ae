@@ -15,7 +15,7 @@
         },
         {
           "name": "Nuestro Equipo",
-          "url": "/nuestro-equipo"
+          "url": "/team"
         },
         {
           "name": "¿Dónde Trabajamos?",
@@ -45,7 +45,7 @@
         },
         {
           "name": "Historial",
-          "url": "/changelog"
+          "url": "/programs"
         },
         {
           "name": "Campañas",
@@ -78,7 +78,7 @@
     },
     {
       "name": "Nuestro Equipo",
-      "url": "/changelog"
+      "url": "/team"
     }
   ]
 }

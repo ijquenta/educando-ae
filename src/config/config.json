@@ -1,23 +1,23 @@
 {
   "site": {
-    "title": "Educando AE",
-    "base_url": "https://astro-starter.alfadev.io",
+    "title": "Educando",
+    "base_url": "",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.ico",
     "logo": "/images/logo.png",
-    "logo_width": "47",
-    "logo_height": "47",
-    "logo_text": "Educando AE"
+    "logo_width": "57",
+    "logo_height": "57",
+    "logo_text": "Educando"
   },
 
   "params": {
   "footer_description": "Este sitio web está diseñado para proporcionar información y recursos educativos de manera accesible y moderna.",
   "email": "ijquenta@gmail.com",
   "location": "Bolivia, La Paz",
-  "phone": "+591 76261653",
+  "phone": "+591 78792865",
   "contact_form_action": "#",
-  "copyright": "Copyright © 2025 orgullosamente desarrollado para el Instituto Educativo"
+  "copyright": "Copyright © 2026 Educando Asesoria Educativa. Todos los derechos reservados."
 },
 
 "metadata": {
