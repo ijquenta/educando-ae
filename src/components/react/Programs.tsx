@@ -1,12 +1,12 @@
 import React, { type PropsWithChildren } from "react";
 
-export type ChangelogProps = PropsWithChildren & {
+export type ProgramsProps = PropsWithChildren & {
     date: string;
 };
 
-const Changelog = ({ children, date }: ChangelogProps) => {
+const Programs = ({ children, date }: ProgramsProps) => {
     return (
-        <section className="section changelogs py-0 first:pt-5">
+        <section className="section programs py-0 first:pt-5">
             <div className="container">
                 <div className="row justify-center">
                     <div className="lg:col-10">
@@ -15,7 +15,7 @@ const Changelog = ({ children, date }: ChangelogProps) => {
                                 <h6 className="mb-4 pl-7 text-lg lg:mt-0 lg:pl-0">{date}</h6>
                             </div>
                             <div className="lg:col-9 lg:border-l border-text/10 lg:pb-10 lg:pl-10">
-                                <div className="changelogs-content p-6 lg:p-10">
+                                <div className="programs-content p-6 lg:p-10">
                                     {children}
                                 </div>
                             </div>
@@ -27,4 +27,4 @@ const Changelog = ({ children, date }: ChangelogProps) => {
     );
 };
 
-export default Changelog;
+export default Programs;
