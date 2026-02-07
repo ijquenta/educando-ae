@@ -1,28 +1,39 @@
 ---
 import LinkButton from "@/components/LinkButton.astro";
 import { markdownify } from "@/lib/utils/textConverter";
+import config from "@/config/config.json";
 
 const {
   title,
   description,
   button,
 } = Astro.props;
+
+// Generar URL de WhatsApp
+const whatsappNumber = config.params.phone.replace(/\D/g, "");
+const whatsappMessage = "Quiero más información para universe";
+const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 ---
 
-<section class="px-5 py-20 xl:py-[120px]">
+<section class="px-5 py-10 xl:py-[100px]">
   <div class="container">
     <div
-      class="bg-surface shadow row justify-center rounded-2xl px-[30px] pb-[75px] pt-16"
+      class="relative overflow-hidden rounded-3xl "
     >
-      <div class="lg:col-11">
-        <div class="row">
-          <div class="lg:col-7">
-            <h2 class="h1 text-text" set:html={markdownify(title)}/>
-            {button && <LinkButton {...button} addClasses="mt-8" />}
-          </div>
-          <div class="mt-8 lg:col-5 lg:mt-0">
-            <p class="text-text" set:html={markdownify(description)}/>
-          </div>
+      <!-- Decoración lateral izquierda -->
+      <div class="absolute -left-20 -top-20 w-40 h-40 bg-primary/5 rounded-full blur-3xl"></div>
+      <div class="absolute -right-20 -bottom-20 w-40 h-40 bg-secondary/5 rounded-full blur-3xl"></div>
+      
+      <!-- Contenido -->
+      <div class="relative px-6 py-16 sm:px-10 md:px-16 lg:py-20">
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+          <h2 class="h1 text-text leading-tight" set:html={markdownify(title)}/>
+          <p class="bg-blue text-lg text-text-secondary max-w-2xl mx-auto" set:html={markdownify(description)}/>
+          {button && (
+            <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+              <LinkButton href={whatsappUrl} label={button.label || "Contacta por WhatsApp"} addClasses="px-8 py-3 text-base bg-primary text-white hover:bg-primary" />
+            </div>
+          )}
         </div>
       </div>
     </div>

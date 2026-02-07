@@ -10,7 +10,7 @@ export interface ChildNavigationLink {
 
 export interface NavigationLink {
   name: string;
-  url: string;
+  url?: string;
   hasChildren?: boolean;
   children?: ChildNavigationLink[];
 }

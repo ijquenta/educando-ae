@@ -2,12 +2,10 @@
 import PageHeader from "@/components/core/PageHeader.astro";
 import Base from "@/layouts/Base.astro";
 import { getEntry } from "astro:content";
+import type { PageType } from "@/content/page.types";
 
 const about = await getEntry("changelog", "index");
-const page_data = {
-  ...about.data,
-  content: about.body,
-};
+const page_data = { ...(about.data as PageType), content: about.body };
 const { Content } = await about.render();
 ---
 

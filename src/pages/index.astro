@@ -1,4 +1,5 @@
 ---
+
 import Section from "@/components/core/Section.astro";
 import Features from "@/components/Features.astro";
 import Testimonial from "@/components/Testimonial.astro";
@@ -7,14 +8,13 @@ import Cta from "@/layouts/partials/Cta.astro";
 import { getEntry } from "astro:content";
 
 const homepage = await getEntry("homepage", "index");
-// console.log(homepage);
 const { banner, sections, features, testimonial } = homepage.data;
 const call_to_action = homepage.data.call_to_action;
 ---
 
 <Base>
-  <!-- banner -->
-  <section class="lg:mb-10 animate-fade-in">
+  <!-- hero -->
+  <section class="lg:mb-10">
     <Section section={banner} />
   </section>
   <!-- multi section -->
@@ -30,7 +30,7 @@ const call_to_action = homepage.data.call_to_action;
   <!-- key features -->
   <Features features={features} />
   <!-- testimonial -->
-  <Testimonial testimonial={testimonial} />
+  <!-- <Testimonial testimonial={testimonial} /> -->
   <!-- call to action -->
   <Cta {...call_to_action} />
   <!-- <Content /> -->
