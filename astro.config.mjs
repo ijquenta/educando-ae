@@ -34,7 +34,7 @@ export default defineConfig({
         "@/components/react/FeatherIcon.tsx",
         "@/components/CounterComponent.astro",
         "@/components/core/Section.astro",
-        "@/components/react/Changelog.tsx",
+        "@/components/react/Programs.tsx",
         "@/components/Badge.astro",
       ],
     }),
