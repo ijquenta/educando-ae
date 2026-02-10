@@ -3,6 +3,7 @@ import type { PageSection } from "@/content/page.types";
 import { markdownify } from "@/lib/utils/textConverter";
 import { Image } from "astro:assets";
 import Button from "../LinkButton.astro";
+import ImageCarousel from "../react/ImageCarousel";
 
 export type Section = PageSection;
 export type Props = {
@@ -11,6 +12,11 @@ export type Props = {
 
 const { section } = Astro.props;
 const { title, buttons, image, content, image_position } = section;
+const carousel = section.carousel as string[] | undefined;
+
+// Layout diferente si tiene carousel
+const isCarousel = carousel && carousel.length > 0;
+
 const image_position_classes = (() => {
   if (!image && !image_position) {
     return ["", "col-12", ""];
@@ -38,37 +44,69 @@ const image_position_classes = (() => {
 })();
 ---
 
-<section class="section">
-  <div class="container">
-    <div class={`row items-center ${image_position_classes[0]}`}>
-      <div class={`${image_position_classes[1]}`}>
-        <h1 class={`${section.title_size}`} set:html={markdownify(title)} />
-        <p class="mt-6" set:html={markdownify(content)} />
-
-        {
-          buttons && buttons.length > 0 && (
-            <div class="flex flex-wrap mt-8">
-              {buttons.map((button) => (
-                <Button {...button} />
-              ))}
-            </div>
-          )
-        }
+{
+  isCarousel ? (
+    <section class="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+      <!-- Carousel Background -->
+      <div class="absolute inset-0 w-full h-full">
+        <ImageCarousel client:load images={carousel as any} />
       </div>
-      <!-- Hero -->
-      {
-        image && image_position != "top" && (
-            <div class={`${image_position_classes[2]}`}>
-              <Image
-                class="w-full object-contain aspect-square rounded-full"
-                alt="section-image"
-                src={image}
-                width={800}
-                height={450}
-              />
-            </div>
-          )
-        }
-    </div>
-  </div>
-</section>
+
+      <!-- Overlay oscuro para mejor legibilidad del texto -->
+      <div class="absolute inset-0 bg-black/40"></div>
+
+      <!-- Contenido superpuesto -->
+      <div class="container relative z-10 px-4 md:px-6 py-16 md:py-20 w-full">
+        <div class="max-w-3xl mx-auto md:mx-0 text-center md:text-left">
+          <h1 class={`${section.title_size} text-white drop-shadow-lg`} set:html={markdownify(title)} />
+          <p class="mt-4 md:mt-6 text-base md:text-lg text-white/95 drop-shadow-md" set:html={markdownify(content)} />
+
+          {
+            buttons && buttons.length > 0 && (
+              <div class="flex flex-col md:flex-row flex-wrap gap-3 md:gap-4 mt-6 md:mt-8">
+                {buttons.map((button) => (
+                  <Button {...button} />
+                ))}
+              </div>
+            )
+          }
+        </div>
+      </div>
+    </section>
+  ) : (
+    <section class="section">
+      <div class="container">
+        <div class={`row items-center ${image_position_classes[0]}`}>
+          <div class={`${image_position_classes[1]}`}>
+            <h1 class={`${section.title_size}`} set:html={markdownify(title)} />
+            <p class="mt-6" set:html={markdownify(content)} />
+
+            {
+              buttons && buttons.length > 0 && (
+                <div class="flex flex-wrap mt-8">
+                  {buttons.map((button) => (
+                    <Button {...button} />
+                  ))}
+                </div>
+              )
+            }
+          </div>
+          <!-- Hero/Image -->
+          {
+            image && image_position != "top" ? (
+              <div class={`${image_position_classes[2]}`}>
+                <Image
+                  class="w-full object-contain"
+                  alt="section-image"
+                  src={image}
+                  width={800}
+                  height={450}
+                />
+              </div>
+            ) : null
+          }
+        </div>
+      </div>
+    </section>
+  )
+}

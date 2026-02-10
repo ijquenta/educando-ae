@@ -3,7 +3,13 @@ banner:
   title: 'Habilidades para el mundo del mañana <span class="text-secondary text-shadow-[0px_5px_15px] shadow-accent/10">Beca Estudiantil</span>' 
   title_size: "text-4xl md:text-6xl"
   content: "Un ambiente educativo inclusivo, interactivo y creativo donde las mentes jóvenes pueden desarrollarse y explorar."
-  image: /images/hero.png
+  carousel:
+    - /images/educando_kids_1_o.jpg
+    - /images/educando_kids_meet_2_o.jpg
+    - /images/educando_kids_with_teacher_3_o.jpg
+    - /images/educando_kids_4_o.jpg
+    - /images/educando_kids_5_o.jpg
+    - /images/educando_people_6_o.jpg
   buttons:
     - label: Nuestros Programas
       href: "/programs"

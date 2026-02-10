@@ -28,8 +28,12 @@ export interface PageSection {
   title_size?: string;
   content: string;
   buttons: LinkButton[] & { length: 0 | 1 | 2};
-  image: string;
+  image?: string;
   image_position?: "top" | "bottom" | "left" | "right";
+  /**
+   * Array of image URLs for carousel/slider display
+   */
+  carousel?: string[];
 };
 
 
