@@ -8,8 +8,8 @@ import AutoImport from "astro-auto-import";
 
 // https://astro.build/config
 export default defineConfig({
-  site: config.site.base_url ? config.site.base_url : "http://astrotemplatesitey.com",
-  base: config.site.base_path ? config.site.base_path : "/",
+  site: config?.site?.base_url || "https://example.com",
+  base: config?.site?.base_path || "/",
   trailingSlash: config.site.trailing_slash ? "always" : "never",
   vite: {
     css: {
@@ -26,7 +26,7 @@ export default defineConfig({
   },
   integrations: [
     react(),
-    sitemap(),
+    // sitemap(),
     tailwind(),
     AutoImport({
       // import react components to use in mdx

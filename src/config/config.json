@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Educando",
-    "base_url": "",
+    "base_url": "https://educando-ae.vercel.app",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.ico",
