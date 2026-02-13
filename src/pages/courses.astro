@@ -1,0 +1,427 @@
+---
+import Base from "@/layouts/Base.astro";
+---
+
+<Base entry_keys={["about", "index"]}>
+  <!-- Hero Section Enhanced -->
+  <section class="relative min-h-[70vh] flex items-center overflow-hidden py-16">
+    <!-- Gradient Background -->
+    <div class="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-secondary/5 dark:from-secondary/10 dark:to-secondary/5"></div>
+    <div class="absolute inset-0 opacity-10 pointer-events-none">
+      <div class="w-full h-full bg-[url('https://www.transparenttextures.com/patterns/paper-fibers.png')] dark:bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')]"></div>
+    </div>
+    
+    <!-- Decorative elements -->
+    <div class="absolute top-20 right-10 w-72 h-72 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl pointer-events-none"></div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="max-w-4xl">
+        <div class="mb-8 motion-preset-fade motion-on-scroll">
+          <span class="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary font-semibold px-4 py-2 rounded-full text-sm mb-6">
+            🎓 Programas Educativos de Alto Impacto
+          </span>
+        </div>
+        <h1 class="text-6xl md:text-7xl font-extrabold text-gray-900 dark:text-white mb-6 motion-preset-fade motion-translate-y-in-[25%] motion-on-scroll leading-tight">
+          Nuestros <span class="bg-gradient-to-r from-secondary to-secondary/70 bg-clip-text text-transparent">Cursos</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-700 dark:text-gray-200 mb-6 motion-preset-fade motion-delay-[0.2s] motion-on-scroll max-w-2xl">
+          Programas especializados diseñados para transformar tu educación y desarrollar habilidades estratégicas para tu futuro.
+        </p>
+        <p class="text-lg text-gray-600 dark:text-gray-400 motion-preset-fade motion-delay-[0.4s] motion-on-scroll max-w-2xl leading-relaxed">
+          Metodologías comprobadas, mentorería personalizada y comunidad de aprendices que comparten tu visión de crecimiento.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="py-12 bg-gradient-to-r from-secondary/5 to-transparent dark:from-secondary/10 dark:to-transparent border-b border-gray-200 dark:border-gray-800">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="text-center motion-preset-fade motion-on-scroll">
+          <div class="text-3xl md:text-4xl font-bold text-secondary mb-2">500+</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm">Estudiantes Activos</p>
+        </div>
+        <div class="text-center motion-preset-fade motion-delay-[0.1s] motion-on-scroll">
+          <div class="text-3xl md:text-4xl font-bold text-secondary mb-2">4</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm">Especialidades</p>
+        </div>
+        <div class="text-center motion-preset-fade motion-delay-[0.2s] motion-on-scroll">
+          <div class="text-3xl md:text-4xl font-bold text-secondary mb-2">95%</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm">Satisfacción</p>
+        </div>
+        <div class="text-center motion-preset-fade motion-delay-[0.3s] motion-on-scroll">
+          <div class="text-3xl md:text-4xl font-bold text-secondary mb-2">6+</div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm">Años Experiencia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cursos Grid Section -->
+  <section class="py-24">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16 motion-preset-fade motion-on-scroll">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          Especializaciones Disponibles
+        </h2>
+        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          Elige tu camino de aprendizaje. Cada curso es una oportunidad para transformar tus habilidades y alcanzar tus metas.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+        
+        <!-- Curso 1: Lectura Rápida para Niños y Jóvenes -->
+        <a href="/cursos/lectura-rapida" class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 motion-preset-bounce motion-on-scroll block bg-white dark:bg-gray-800">
+          <div class="relative h-80 overflow-hidden bg-gray-200 dark:bg-gray-700">
+            <img 
+              src="/images/curso-lectura-rapida.jpg" 
+              alt="Lectura Rápida para Niños y Jóvenes" 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/20 to-transparent opacity-70 group-hover:opacity-50 transition-all duration-300"></div>
+            
+            <!-- Badge -->
+            <div class="absolute top-4 right-4 bg-blue-500 text-white px-4 py-2 rounded-full text-xs font-semibold">
+              📚 Lectura
+            </div>
+          </div>
+          <div class="p-8">
+            <div class="flex items-start justify-between mb-4">
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-secondary transition-colors">
+                  Lectura Rápida
+                </h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Lectura & Comprensión</p>
+              </div>
+              <span class="text-2xl">📖</span>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300 mb-6 line-clamp-2">
+              Aprende técnicas comprobadas para leer más rápido sin perder comprensión. Ideal para estudiantes de 8 a 18 años.
+            </p>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
+              <div class="flex gap-4 text-xs text-gray-600 dark:text-gray-400">
+                <span>⏱️ 8 meses</span>
+                <span>👥 +150 alumnos</span>
+              </div>
+              <div class="inline-flex items-center text-secondary font-semibold group-hover:translate-x-2 transition-transform">
+                <span>→</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Curso 2: Matemáticas -->
+        <a href="/cursos/matematicas" class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 motion-scale-in-[0.5] motion-rotate-in-[-10deg] motion-on-scroll block bg-white dark:bg-gray-800">
+          <div class="relative h-80 overflow-hidden bg-gray-200 dark:bg-gray-700">
+            <img 
+              src="/images/curso-mate.jpg" 
+              alt="Matemáticas" 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/20 to-transparent opacity-70 group-hover:opacity-50 transition-all duration-300"></div>
+            
+            <!-- Badge -->
+            <div class="absolute top-4 right-4 bg-green-500 text-white px-4 py-2 rounded-full text-xs font-semibold">
+              🔢 Matemáticas
+            </div>
+          </div>
+          <div class="p-8">
+            <div class="flex items-start justify-between mb-4">
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-secondary transition-colors">
+                  Matemáticas
+                </h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Conceptos Fundamentales</p>
+              </div>
+              <span class="text-2xl">🧮</span>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300 mb-6 line-clamp-2">
+              Domina conceptos matemáticos con un enfoque práctico, desde lo básico hasta lo avanzado con aplicaciones reales.
+            </p>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
+              <div class="flex gap-4 text-xs text-gray-600 dark:text-gray-400">
+                <span>⏱️ 12 meses</span>
+                <span>👥 +120 alumnos</span>
+              </div>
+              <div class="inline-flex items-center text-secondary font-semibold group-hover:translate-x-2 transition-transform">
+                <span>→</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Curso 3: Desarrollo de Videojuegos -->
+        <a href="/cursos/desarrollo-videojuegos" class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 motion-preset-pop motion-on-scroll block bg-white dark:bg-gray-800">
+          <div class="relative h-80 overflow-hidden bg-gray-200 dark:bg-gray-700">
+            <img 
+              src="/images/curso-videojuegos.jpg" 
+              alt="Desarrollo de Videojuegos" 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/20 to-transparent opacity-70 group-hover:opacity-50 transition-all duration-300"></div>
+            
+            <!-- Badge -->
+            <div class="absolute top-4 right-4 bg-purple-500 text-white px-4 py-2 rounded-full text-xs font-semibold">
+              🎮 Tecnología
+            </div>
+          </div>
+          <div class="p-8">
+            <div class="flex items-start justify-between mb-4">
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-secondary transition-colors">
+                  Dev. Videojuegos
+                </h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Programación Creativa</p>
+              </div>
+              <span class="text-2xl">🎯</span>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300 mb-6 line-clamp-2">
+              Crea videojuegos profesionales con Unity, Unreal Engine y Godot. De cero a portafolio profesional.
+            </p>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
+              <div class="flex gap-4 text-xs text-gray-600 dark:text-gray-400">
+                <span>⏱️ 10 meses</span>
+                <span>👥 +80 alumnos</span>
+              </div>
+              <div class="inline-flex items-center text-secondary font-semibold group-hover:translate-x-2 transition-transform">
+                <span>→</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Curso 4: Lectura Veloz y Comprensiva -->
+        <a href="/cursos/lectura-veloz-comprensiva" class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 motion-translate-x-in-[-25%] motion-translate-y-in-[25%] motion-on-scroll block bg-white dark:bg-gray-800">
+          <div class="relative h-80 overflow-hidden bg-gray-200 dark:bg-gray-700">
+            <img 
+              src="/images/curso-lectura-rapida.jpg" 
+              alt="Lectura Veloz y Comprensiva" 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/20 to-transparent opacity-70 group-hover:opacity-50 transition-all duration-300"></div>
+            
+            <!-- Badge -->
+            <div class="absolute top-4 right-4 bg-orange-500 text-white px-4 py-2 rounded-full text-xs font-semibold">
+              ⭐ Avanzado
+            </div>
+          </div>
+          <div class="p-8">
+            <div class="flex items-start justify-between mb-4">
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-secondary transition-colors">
+                  Lectura Veloz+
+                </h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Nivel Experto</p>
+              </div>
+              <span class="text-2xl">⚡</span>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300 mb-6 line-clamp-2">
+              Alcanza 1,000+ palabras por minuto con comprensión crítica. Para estudiantes avanzados y profesionales.
+            </p>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
+              <div class="flex gap-4 text-xs text-gray-600 dark:text-gray-400">
+                <span>⏱️ 8 meses</span>
+                <span>👥 +60 alumnos</span>
+              </div>
+              <div class="inline-flex items-center text-secondary font-semibold group-hover:translate-x-2 transition-transform">
+                <span>→</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Our Courses Section -->
+  <section class="py-24 bg-white dark:bg-gray-900/50 border-b border-gray-200 dark:border-gray-800">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16 motion-preset-fade motion-on-scroll">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          ¿Por Qué Elegir Educando AE?
+        </h2>
+        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          Transformamos vidas a través de la educación de calidad y mentorería dedicada
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="p-8 bg-gradient-to-br from-blue-50/50 to-blue-50/0 dark:from-blue-900/20 dark:to-transparent rounded-2xl border border-blue-200/50 dark:border-blue-800/30 motion-preset-bounce motion-on-scroll hover:shadow-lg transition-all duration-300">
+          <div class="text-5xl mb-4">🎯</div>
+          <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-3">Resultados Comprobados</h3>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+            Metodologías validadas con 95% de satisfacción que generan transformación real en el aprendizaje.
+          </p>
+        </div>
+        
+        <div class="p-8 bg-gradient-to-br from-green-50/50 to-green-50/0 dark:from-green-900/20 dark:to-transparent rounded-2xl border border-green-200/50 dark:border-green-800/30 motion-scale-in-[0.5] motion-on-scroll hover:shadow-lg transition-all duration-300">
+          <div class="text-5xl mb-4">👨‍🏫</div>
+          <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-3">Mentorería Personalizada</h3>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+            Acompañamiento continuo adaptado a tu ritmo y necesidades específicas de aprendizaje.
+          </p>
+        </div>
+        
+        <div class="p-8 bg-gradient-to-br from-purple-50/50 to-purple-50/0 dark:from-purple-900/20 dark:to-transparent rounded-2xl border border-purple-200/50 dark:border-purple-800/30 motion-preset-pop motion-on-scroll hover:shadow-lg transition-all duration-300">
+          <div class="text-5xl mb-4">📈</div>
+          <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-3">Impacto Duradero</h3>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+            Habilidades que transforman tu futuro académico, personal y profesional.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enhanced CTA Section -->
+  <section class="py-24 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent dark:from-secondary/5"></div>
+    <div class="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -z-10"></div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="max-w-3xl mx-auto text-center motion-preset-fade motion-on-scroll">
+        <h2 class="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+          Inicia Tu Transformación Hoy
+        </h2>
+        <p class="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-4">
+          Únete a cientos de estudiantes que ya están transformando sus vidas
+        </p>
+        <p class="text-lg text-gray-600 dark:text-gray-400 mb-12">
+          Elige tu especializacion y comienza tu viaje hacia el éxito. Las primeras 10 inscripciones del mes reciben 20% de descuento.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center motion-preset-bounce motion-delay-[0.2s] motion-on-scroll">
+          <a href="/contact" class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105 text-lg shadow-lg hover:shadow-xl">
+            📞 Contactar Ahora
+          </a>
+          <a href="/donate" class="inline-block border-2 border-secondary text-secondary dark:text-secondary hover:bg-secondary hover:text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105 text-lg">
+            ❤️ Apoyar a Educando
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section Enhanced -->
+  <section class="py-24 bg-gray-50 dark:bg-gray-900/50 border-t border-gray-200 dark:border-gray-800">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16 motion-preset-fade motion-on-scroll">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          Preguntas Frecuentes
+        </h2>
+        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          Resolvemos tus dudas sobre nuestros cursos y proceso de inscripción
+        </p>
+      </div>
+      
+      <div class="max-w-4xl mx-auto">
+        <div class="space-y-4">
+          <details class="group p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 motion-preset-fade motion-on-scroll open:bg-blue-50 dark:open:bg-blue-900/20 open:border-l-4 open:border-l-secondary">
+            <summary class="flex items-center justify-between cursor-pointer select-none">
+              <span class="text-lg md:text-xl font-semibold text-gray-900 dark:text-white">
+                ¿Puedo combinar varios cursos?
+              </span>
+              <span class="transition-transform duration-300 group-open:rotate-180 text-2xl">▼</span>
+            </summary>
+            <p class="text-gray-700 dark:text-gray-300 mt-4 leading-relaxed">
+              Sí, nuestros cursos están diseñados para complementarse. Puedes comenzar con uno y agregar otros según tu disponibilidad y objetivos. Ofrecemos paquetes especiales cuando cursas más de uno.
+            </p>
+          </details>
+
+          <details class="group p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 motion-preset-fade motion-delay-[0.1s] motion-on-scroll open:bg-blue-50 dark:open:bg-blue-900/20 open:border-l-4 open:border-l-secondary">
+            <summary class="flex items-center justify-between cursor-pointer select-none">
+              <span class="text-lg md:text-xl font-semibold text-gray-900 dark:text-white">
+                ¿Hay descuentos para grupos o instituciones?
+              </span>
+              <span class="transition-transform duration-300 group-open:rotate-180 text-2xl">▼</span>
+            </summary>
+            <p class="text-gray-700 dark:text-gray-300 mt-4 leading-relaxed">
+              Absolutamente. Contáctanos directamente para consultar sobre programas especiales para grupos, escuelas e instituciones educativas. Tenemos planes personalizados y descuentos para matriculas múltiples.
+            </p>
+          </details>
+
+          <details class="group p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 motion-preset-fade motion-delay-[0.2s] motion-on-scroll open:bg-blue-50 dark:open:bg-blue-900/20 open:border-l-4 open:border-l-secondary">
+            <summary class="flex items-center justify-between cursor-pointer select-none">
+              <span class="text-lg md:text-xl font-semibold text-gray-900 dark:text-white">
+                ¿Recibo certificado al finalizar?
+              </span>
+              <span class="transition-transform duration-300 group-open:rotate-180 text-2xl">▼</span>
+            </summary>
+            <p class="text-gray-700 dark:text-gray-300 mt-4 leading-relaxed">
+              Sí. Al completar cada curso, recibirás un certificado oficial de Educando AE que reconoce tu logro y competencias adquiridas. Este certificado es válido internacionalmente y puedes compartirlo en redes profesionales.
+            </p>
+          </details>
+
+          <details class="group p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 motion-preset-fade motion-delay-[0.3s] motion-on-scroll open:bg-blue-50 dark:open:bg-blue-900/20 open:border-l-4 open:border-l-secondary">
+            <summary class="flex items-center justify-between cursor-pointer select-none">
+              <span class="text-lg md:text-xl font-semibold text-gray-900 dark:text-white">
+                ¿Cómo es el proceso de inscripción?
+              </span>
+              <span class="transition-transform duration-300 group-open:rotate-180 text-2xl">▼</span>
+            </summary>
+            <p class="text-gray-700 dark:text-gray-300 mt-4 leading-relaxed">
+              Es simple: 1) Selecciona tu curso, 2) Completa el formulario de inscripción, 3) Realiza el pago y 4) Recibirás acceso inmediato al material del curso. Nuestro equipo te contactará en 24 horas para personalizar tu experiencia.
+            </p>
+          </details>
+
+          <details class="group p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 motion-preset-fade motion-delay-[0.4s] motion-on-scroll open:bg-blue-50 dark:open:bg-blue-900/20 open:border-l-4 open:border-l-secondary">
+            <summary class="flex items-center justify-between cursor-pointer select-none">
+              <span class="text-lg md:text-xl font-semibold text-gray-900 dark:text-white">
+                ¿Hay garantía de satisfacción?
+              </span>
+              <span class="transition-transform duration-300 group-open:rotate-180 text-2xl">▼</span>
+            </summary>
+            <p class="text-gray-700 dark:text-gray-300 mt-4 leading-relaxed">
+              Tenemos una política de 14 días de garantía de satisfacción. Si no estás conforme con el curso en el primer mes, ofrecemos un reembolso completo. Tu éxito es nuestra prioridad.
+            </p>
+          </details>
+        </div>
+
+        <!-- Contact CTA in FAQ -->
+        <div class="mt-12 p-8 bg-gradient-to-r from-secondary/10 to-transparent dark:from-secondary/5 rounded-2xl border border-secondary/20 dark:border-secondary/10 text-center">
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">
+            ¿No encontraste tu respuesta?
+          </h3>
+          <p class="text-gray-700 dark:text-gray-300 mb-6">
+            Contáctanos directamente y un miembro del equipo te ayudará con cualquier pregunta.
+          </p>
+          <a href="/contact" class="inline-block bg-secondary hover:bg-secondary/90 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105">
+            Contactar Soporte
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intersection Observer Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Marcar todos como activos inicialmente para evitar invisibilidad en carga
+      document.querySelectorAll('.motion-on-scroll').forEach(el => {
+        el.classList.add('motion-active');
+      });
+
+      // Luego configurar el observer para animaciones al scroll
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('motion-active');
+          }
+        });
+      }, { threshold: 0.05 });
+
+      document.querySelectorAll('.motion-on-scroll').forEach(el => {
+        observer.observe(el);
+      });
+    });
+  </script>
+
+  <style>
+    .motion-on-scroll {
+      will-change: opacity, transform;
+    }
+  </style>
+</Base>

@@ -30,6 +30,7 @@ const { contact_form_action } = config.params;
                 class="form-control"
                 type="text"
                 id="name"
+                name="name"
                 placeholder="Tu nombre completo"
               />
             </div>
@@ -37,8 +38,9 @@ const { contact_form_action } = config.params;
               <label class="form-label" for="email">Correo Electrónico</label>
               <input
                 class="form-control"
-                type="text"
+                type="email"
                 id="email"
+                name="email"
                 placeholder="Tu dirección de correo electrónico"
               />
             </div>
@@ -58,6 +60,7 @@ const { contact_form_action } = config.params;
               <textarea
                 class="form-control h-[150px]"
                 id="message"
+                name="message"
                 cols="30"
                 rows="10"
                 placeholder="Escribe tu mensaje aquí"

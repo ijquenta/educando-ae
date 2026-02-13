@@ -1,0 +1,301 @@
+---
+import Base from "@/layouts/Base.astro";
+
+const donationAmounts = [10, 30, 50, "Otro"];
+---
+
+<Base entry_keys={["about", "index"]}>
+  <!-- Hero Donation Section -->
+  <section class="relative min-h-screen flex items-center overflow-hidden py-16">
+    <div class="absolute inset-0 opacity-5 pointer-events-none">
+      <div class="w-full h-full"></div>
+    </div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        
+        <!-- Form Section -->
+        <div class="motion-preset-slide-right motion-on-scroll">
+          <h1 class="text-4xl md:text-5xl font-extrabold text-secondary mb-4">
+            Apoya Nuestra Misión
+          </h1>
+          <p class="text-gray-700 dark:text-gray-200 text-lg mb-8 motion-preset-fade motion-delay-[0.2s] motion-on-scroll">
+            Tu donación transforma la educación en Bolivia, brindando oportunidades a estudiantes y comunidades vulnerables.
+          </p>
+
+          <!-- Donation Form -->
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg motion-preset-bounce motion-delay-[0.3s] motion-on-scroll">
+            
+            <!-- Donation Type Tabs -->
+            <div class="flex gap-4 mb-8">
+              <button class="donation-tab px-6 py-2 rounded-lg font-semibold transition-all duration-300" data-type="bolivia">
+                Bolivia
+              </button>
+              <button class="donation-tab px-6 py-2 rounded-lg font-semibold transition-all duration-300" data-type="international">
+                Extranjero
+              </button>
+            </div>
+
+            <!-- Bolivia Section -->
+            <div id="bolivia-section" class="space-y-6">
+              <!-- QR Code -->
+              <div class="mb-6">
+                <p class="text-sm font-semibold text-gray-700 dark:text-gray-200 mb-3">
+                  Escanea este QR para donar:
+                </p>
+                <div class="bg-white p-4 rounded-lg inline-block">
+                  <img 
+                    src="/images/yasta.jpeg" 
+                    alt="QR Code Donación Bolivia" 
+                    class="w-68 h-10q8"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- International Section -->
+            <div id="international-section" class="space-y-6 hidden">
+
+              <!-- WhatsApp Contact -->
+              <div class="mb-6 bg-green-50 dark:bg-green-900/20 border-2 border-green-500 rounded-lg p-6">
+                <p class="text-gray-700 dark:text-gray-200 mb-4">
+                  Para donaciones internacionales, contáctanos por WhatsApp:
+                </p>
+                <a 
+                  href="https://wa.me/59123456789" 
+                  target="_blank" 
+                  class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105"
+                >
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.781 1.226l-.341.194-3.52-.922.941 3.389-.213.341a9.796 9.796 0 001.203 5.645c2.633 4.156 7.18 5.653 11.574 3.595 1.322-.67 2.566-1.64 3.592-2.953 1.025-1.312 1.842-2.853 2.334-4.52.492-1.667.64-3.415.45-5.082-.19-1.667-.75-3.273-1.66-4.644-1.81-2.831-5.193-4.637-8.987-4.637zm0 0"/>
+                  </svg>
+                  Contactar por WhatsApp
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Image Section (responsive) -->
+        <div class="motion-scale-in-[0.5] motion-delay-[0.4s] motion-on-scroll">
+          <!-- Small screens: circular image (keeps original look) -->
+          <div class="lg:hidden flex justify-center">
+            <div class="relative w-full max-w-md aspect-square">
+              <div class="absolute inset-0 bg-gradient-to-br from-secondary/20 to-secondary/5 rounded-full blur-3xl"></div>
+              <img
+                src="/images/creativity.png"
+                alt="Apoya nuestra misión"
+                class="relative w-full h-full object-cover rounded-full shadow-2xl transition-all duration-300 hover:scale-105"
+              />
+            </div>
+          </div>
+
+          <!-- Large screens: full-right-half background image -->
+          <div class="hidden lg:block">
+            <div class="relative w-full h-full min-h-[420px] lg:min-h-screen rounded-2xl overflow-hidden shadow-2xl">
+              <div
+                class="absolute inset-0 bg-center bg-cover"
+                style="background-image: url('/images/creativity.png'); background-position: center; background-size: cover;"
+                aria-hidden="true"
+              ></div>
+
+              <!-- Soft fade overlay on the left edge to blend into content (light + dark) -->
+              <div class="absolute inset-0 pointer-events-none">
+                <div class="absolute left-0 top-0 bottom-0 w-1/2 pointer-events-none bg-gradient-to-r from-white/95 to-transparent dark:from-gray-900/95 dark:to-transparent"></div>
+              </div>
+
+              <div class="absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent dark:from-secondary/20"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Section -->
+  <section class="py-16 bg-gradient-to-br from-secondary/10 to-transparent dark:from-secondary/5">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+          El Impacto de Tu Donación
+        </h2>
+        <p class="text-gray-700 dark:text-gray-200 max-w-2xl mx-auto">
+          Con tu apoyo, financiamos programas de formación docente, materiales educativos inclusivos y talleres comunitarios que empoderan a estudiantes y familias.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="motion-preset-fade motion-delay-[0.1s] motion-on-scroll bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+          <div class="text-4xl font-bold text-secondary mb-2">+500</div>
+          <p class="text-gray-700 dark:text-gray-200 font-semibold">Estudiantes Beneficiados</p>
+        </div>
+        <div class="motion-preset-fade motion-delay-[0.2s] motion-on-scroll bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+          <div class="text-4xl font-bold text-secondary mb-2">+50</div>
+          <p class="text-gray-700 dark:text-gray-200 font-semibold">Docentes Capacitados</p>
+        </div>
+        <div class="motion-preset-fade motion-delay-[0.3s] motion-on-scroll bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+          <div class="text-4xl font-bold text-secondary mb-2">+20</div>
+          <p class="text-gray-700 dark:text-gray-200 font-semibold">Comunidades Alcanzadas</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
+        Preguntas Frecuentes
+      </h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="motion-preset-fade motion-delay-[0.1s] motion-on-scroll bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300">
+          <h3 class="text-lg font-bold text-secondary mb-2">¿Dónde va mi donación?</h3>
+          <p class="text-gray-700 dark:text-gray-200 text-sm">
+            Tu donación se destina a programas educativos, capacitación docente y materiales inclusivos para comunidades vulnerables en Bolivia.
+          </p>
+        </div>
+        <div class="motion-preset-fade motion-delay-[0.2s] motion-on-scroll bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300">
+          <h3 class="text-lg font-bold text-secondary mb-2">¿Puedo cancelar mi donación recurrente?</h3>
+          <p class="text-gray-700 dark:text-gray-200 text-sm">
+            Sí, puedes cancelar o modificar tu donación recurrente en cualquier momento contactándonos.
+          </p>
+        </div>
+        <div class="motion-preset-fade motion-delay-[0.3s] motion-on-scroll bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300">
+          <h3 class="text-lg font-bold text-secondary mb-2">¿Es seguro donar en línea?</h3>
+          <p class="text-gray-700 dark:text-gray-200 text-sm">
+            Sí, usamos PayPal y Stripe, plataformas de pago certificadas y seguras que protegen tus datos.
+          </p>
+        </div>
+        <div class="motion-preset-fade motion-delay-[0.4s] motion-on-scroll bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300">
+          <h3 class="text-lg font-bold text-secondary mb-2">¿Recibiré un recibo?</h3>
+          <p class="text-gray-700 dark:text-gray-200 text-sm">
+            Sí, enviaremos un recibo de tu donación a tu correo electrónico automáticamente.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intersection Observer Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Marcar todos como activos inicialmente para evitar invisibilidad en carga
+      document.querySelectorAll('.motion-on-scroll').forEach((el) => {
+        el.classList.add('motion-active');
+      });
+
+      // Intersection Observer para animaciones al scroll
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('motion-active');
+          }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.motion-on-scroll').forEach(el => observer.observe(el));
+
+      // Donation functionality
+      const donationTabs = document.querySelectorAll('.donation-tab');
+      const boliviaSection = document.getElementById('bolivia-section');
+      const internationalSection = document.getElementById('international-section');
+      const amountInput = document.getElementById('amount-input') as HTMLInputElement | null;
+      const amountInputIntl = document.getElementById('amount-input-international') as HTMLInputElement | null;
+      const quickAmountButtons = document.querySelectorAll('.quick-amount');
+      const quickAmountButtonsIntl = document.querySelectorAll('.quick-amount-international');
+      let selectedType = 'bolivia';
+
+      // Tab click handlers
+      donationTabs.forEach(tab => {
+        tab.addEventListener('click', (e) => {
+          const tabElement = tab as HTMLElement;
+          selectedType = tabElement.dataset.type || 'bolivia';
+          
+          // Update tab styles
+          donationTabs.forEach(t => {
+            const tabEl = t as HTMLElement;
+            tabEl.classList.remove('bg-secondary', 'text-white');
+            tabEl.classList.add('bg-gray-200', 'dark:bg-gray-700', 'text-gray-800', 'dark:text-gray-200');
+          });
+          tabElement.classList.add('bg-secondary', 'text-white');
+          tabElement.classList.remove('bg-gray-200', 'dark:bg-gray-700', 'text-gray-800', 'dark:text-gray-200');
+          
+          // Show/hide sections
+          if (selectedType === 'bolivia') {
+            boliviaSection?.classList.remove('hidden');
+            internationalSection?.classList.add('hidden');
+          } else {
+            boliviaSection?.classList.add('hidden');
+            internationalSection?.classList.remove('hidden');
+          }
+        });
+      });
+
+      // Quick amount buttons - Bolivia
+      if (amountInput) {
+        amountInput.addEventListener('input', (e) => {
+          quickAmountButtons.forEach(btn => {
+            (btn as HTMLElement).classList.remove('!bg-secondary', 'text-white');
+          });
+        });
+      }
+
+      quickAmountButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const btnElement = btn as HTMLElement;
+          const amount = btnElement.dataset.amount;
+          if (amount && amountInput) {
+            amountInput.value = amount;
+            quickAmountButtons.forEach(b => {
+              (b as HTMLElement).classList.remove('!bg-secondary', 'text-white');
+            });
+            btnElement.classList.add('!bg-secondary', 'text-white');
+          }
+        });
+      });
+
+      // Quick amount buttons - International
+      if (amountInputIntl) {
+        amountInputIntl.addEventListener('input', (e) => {
+          quickAmountButtonsIntl.forEach(btn => {
+            (btn as HTMLElement).classList.remove('!bg-secondary', 'text-white');
+          });
+        });
+      }
+
+      quickAmountButtonsIntl.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const btnElement = btn as HTMLElement;
+          const amount = btnElement.dataset.amount;
+          if (amount && amountInputIntl) {
+            if (amount) {
+              amountInputIntl.value = amount;
+            }
+            quickAmountButtonsIntl.forEach(b => {
+              (b as HTMLElement).classList.remove('!bg-secondary', 'text-white');
+            });
+            btnElement.classList.add('!bg-secondary', 'text-white');
+          }
+        });
+      });
+
+      // Initialize first tab as active
+      if (donationTabs.length > 0) {
+        const firstTab = donationTabs[0] as HTMLElement;
+        firstTab.classList.add('bg-secondary', 'text-white');
+        firstTab.classList.remove('bg-gray-200', 'dark:bg-gray-700', 'text-gray-800', 'dark:text-gray-200');
+        
+        Array.from(donationTabs).slice(1).forEach(tab => {
+          const tabEl = tab as HTMLElement;
+          tabEl.classList.add('bg-gray-200', 'dark:bg-gray-700', 'text-gray-800', 'dark:text-gray-200');
+        });
+      }
+    });
+  </script>
+
+  <style>
+    .motion-on-scroll {
+      will-change: opacity, transform;
+    }
+  </style>
+
+</Base>

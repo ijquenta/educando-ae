@@ -1,0 +1,205 @@
+---
+import Base from "@/layouts/Base.astro";
+---
+
+<Base entry_keys={["about", "index"]}>
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center overflow-hidden py-16">
+    <div class="absolute inset-0 opacity-20 pointer-events-none">
+      <div class="w-full h-full bg-[url('https://www.transparenttextures.com/patterns/paper-fibers.png')] dark:bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')]"></div>
+    </div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        
+        <!-- Content Section -->
+        <div class="motion-preset-slide-right motion-on-scroll">
+          <h1 class="text-4xl md:text-5xl font-extrabold text-secondary mb-4">
+            Lectura Rápida para Niños y Jóvenes
+          </h1>
+          <p class="text-gray-700 dark:text-gray-200 text-lg mb-8">
+            Aprende a leer más rápido y con mejor comprensión. Un programa diseñado especialmente para desarrollar habilidades de lectura acelerada en estudiantes de todas las edades.
+          </p>
+
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-8">
+            <h2 class="text-2xl font-bold text-secondary mb-4">Información del Curso</h2>
+            
+            <div class="space-y-4 mb-6">
+              <div class="flex items-start gap-3">
+                <span class="text-secondary font-bold">📚</span>
+                <div>
+                  <h3 class="font-semibold text-gray-800 dark:text-white">Duración</h3>
+                  <p class="text-gray-700 dark:text-gray-300">8 meses de formación intensiva</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-secondary font-bold">👥</span>
+                <div>
+                  <h3 class="font-semibold text-gray-800 dark:text-white">Público Objetivo</h3>
+                  <p class="text-gray-700 dark:text-gray-300">Niños y jóvenes de 8 a 18 años</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-secondary font-bold">⚡</span>
+                <div>
+                  <h3 class="font-semibold text-gray-800 dark:text-white">Objetivo</h3>
+                  <p class="text-gray-700 dark:text-gray-300">Aumentar velocidad lectora manteniendo comprensión</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="w-full bg-secondary hover:bg-secondary/90 text-white font-semibold py-3 rounded-lg transition-all duration-300 hover:scale-105">
+              Inscribirse Ahora
+            </button>
+          </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="motion-scale-in-[0.5] motion-delay-[0.4s] motion-on-scroll">
+          <div class="relative w-full h-96 rounded-2xl overflow-hidden shadow-2xl">
+            <img 
+              src="/images/curso-lectura-rapida.jpg" 
+              alt="Lectura Rápida" 
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute inset-0 bg-gradient-to-br from-secondary/20 to-transparent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Content Section -->
+  <section class="py-16 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
+        ¿Qué Aprenderás?
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <h3 class="text-xl font-semibold text-secondary mb-3">Técnicas de Lectura Acelerada</h3>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 list-disc list-inside">
+            <li>Expansión del campo visual</li>
+            <li>Eliminación de regresiones</li>
+            <li>Técnicas de skimming</li>
+            <li>Lectura de palabras claves</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <h3 class="text-xl font-semibold text-secondary mb-3">Mejora de Comprensión</h3>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 list-disc list-inside">
+            <li>Activación del conocimiento previo</li>
+            <li>Análisis de estructura de textos</li>
+            <li>Identificación de ideas principales</li>
+            <li>Síntesis y retención de información</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <h3 class="text-xl font-semibold text-secondary mb-3">Desarrollo de Habilidades</h3>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 list-disc list-inside">
+            <li>Entrenamiento visual</li>
+            <li>Concentración mejorada</li>
+            <li>Memoria efectiva</li>
+            <li>Gestión del tiempo de lectura</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <h3 class="text-xl font-semibold text-secondary mb-3">Práctica Continua</h3>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 list-disc list-inside">
+            <li>Ejercicios progresivos</li>
+            <li>Evaluaciones semanales</li>
+            <li>Materiales de diferentes géneros</li>
+            <li>Retroalimentación personalizada</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
+        Beneficios del Curso
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 text-center rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <div class="text-5xl font-bold text-secondary mb-3">3x</div>
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Más Rápido</h3>
+          <p class="text-gray-700 dark:text-gray-300">
+            Aumenta tu velocidad lectora hasta 3 veces más rápido que el promedio.
+          </p>
+        </div>
+
+        <div class="p-6 text-center rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <div class="text-5xl font-bold text-secondary mb-3">95%</div>
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Comprensión</h3>
+          <p class="text-gray-700 dark:text-gray-300">
+            Mantén excelente comprensión mientras lees más rápido.
+          </p>
+        </div>
+
+        <div class="p-6 text-center rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <div class="text-5xl font-bold text-secondary mb-3">+50%</div>
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Retención</h3>
+          <p class="text-gray-700 dark:text-gray-300">
+            Mejora tu capacidad de retención de información.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-gradient-to-br from-secondary/10 to-transparent">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">
+        ¿Listo para Transformar tu Lectura?
+      </h2>
+      <p class="text-gray-700 dark:text-gray-200 text-lg mb-8 max-w-2xl mx-auto">
+        Únete a cientos de estudiantes que ya han mejorado sus habilidades de lectura y están logrando mejores resultados académicos.
+      </p>
+      <div class="flex gap-4 justify-center flex-wrap">
+        <a href="/contact" class="bg-secondary hover:bg-secondary/90 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105">
+          Inscribirse Ahora
+        </a>
+        <a href="/contact" class="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105">
+          Más Información
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intersection Observer Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Marcar todos como activos inicialmente para evitar invisibilidad en carga
+      document.querySelectorAll('.motion-on-scroll').forEach(el => {
+        el.classList.add('motion-active');
+      });
+
+      // Luego configurar el observer para animaciones al scroll
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('motion-active');
+          }
+        });
+      }, { threshold: 0.05 });
+
+      document.querySelectorAll('.motion-on-scroll').forEach(el => {
+        observer.observe(el);
+      });
+    });
+  </script>
+
+  <style>
+    .motion-on-scroll {
+      will-change: opacity, transform;
+    }
+  </style>
+</Base>

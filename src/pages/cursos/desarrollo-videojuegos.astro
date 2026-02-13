@@ -1,0 +1,225 @@
+---
+import Base from "@/layouts/Base.astro";
+---
+
+<Base entry_keys={["about", "index"]}>
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center overflow-hidden py-16">
+    <div class="absolute inset-0 opacity-20 pointer-events-none">
+      <div class="w-full h-full bg-[url('https://www.transparenttextures.com/patterns/paper-fibers.png')] dark:bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')]"></div>
+    </div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        
+        <!-- Content Section -->
+        <div class="motion-preset-slide-right motion-on-scroll">
+          <h1 class="text-4xl md:text-5xl font-extrabold text-secondary mb-4">
+            Desarrollo de Videojuegos
+          </h1>
+          <p class="text-gray-700 dark:text-gray-200 text-lg mb-8">
+            Aprende a crear videojuegos desde cero. Domina motores de juego, programación y diseño para convertir tus ideas en realidad digital.
+          </p>
+
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-8">
+            <h2 class="text-2xl font-bold text-secondary mb-4">Información del Curso</h2>
+            
+            <div class="space-y-4 mb-6">
+              <div class="flex items-start gap-3">
+                <span class="text-secondary font-bold">🎮</span>
+                <div>
+                  <h3 class="font-semibold text-gray-800 dark:text-white">Duración</h3>
+                  <p class="text-gray-700 dark:text-gray-300">10 meses de formación intensa</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-secondary font-bold">👥</span>
+                <div>
+                  <h3 class="font-semibold text-gray-800 dark:text-white">Público Objetivo</h3>
+                  <p class="text-gray-700 dark:text-gray-300">Jóvenes y adultos de 14+ años</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-secondary font-bold">🎯</span>
+                <div>
+                  <h3 class="font-semibold text-gray-800 dark:text-white">Objetivo</h3>
+                  <p class="text-gray-700 dark:text-gray-300">Crear videojuegos profesionales</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="w-full bg-secondary hover:bg-secondary/90 text-white font-semibold py-3 rounded-lg transition-all duration-300 hover:scale-105">
+              Inscribirse Ahora
+            </button>
+          </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="motion-scale-in-[0.5] motion-delay-[0.4s] motion-on-scroll">
+          <div class="relative w-full h-96 rounded-2xl overflow-hidden shadow-2xl">
+            <img 
+              src="/images/curso-videojuegos.jpg" 
+              alt="Desarrollo de Videojuegos" 
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute inset-0 bg-gradient-to-br from-secondary/20 to-transparent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Content Section -->
+  <section class="py-16 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
+        Módulos del Curso
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <h3 class="text-xl font-semibold text-secondary mb-3">Fundamentos de Programación</h3>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 list-disc list-inside">
+            <li>C# y Python para juegos</li>
+            <li>Lógica de programación</li>
+            <li>Estructuras de datos</li>
+            <li>Algoritmos base</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <h3 class="text-xl font-semibold text-secondary mb-3">Motores de Juego</h3>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 list-disc list-inside">
+            <li>Unity - Desarrollo 2D y 3D</li>
+            <li>Unreal Engine</li>
+            <li>Godot Engine</li>
+            <li>Herramientas especializadas</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <h3 class="text-xl font-semibold text-secondary mb-3">Diseño de Juegos</h3>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 list-disc list-inside">
+            <li>Game Design Document (GDD)</li>
+            <li>Mecánicas de juego</li>
+            <li>Balanceo y dificultad</li>
+            <li>Narrativa interactiva</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <h3 class="text-xl font-semibold text-secondary mb-3">Arte y Audio</h3>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 list-disc list-inside">
+            <li>Gráficos 2D y 3D</li>
+            <li>Animación de personajes</li>
+            <li>Efectos visuales</li>
+            <li>Música y sonido</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <h3 class="text-xl font-semibold text-secondary mb-3">Optimización y Publicación</h3>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 list-disc list-inside">
+            <li>Optimización de rendimiento</li>
+            <li>Cross-platform deployment</li>
+            <li>Publicación en tiendas</li>
+            <li>Marketing y monetización</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <h3 class="text-xl font-semibold text-secondary mb-3">Proyectos Prácticos</h3>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 list-disc list-inside">
+            <li>Juego 2D arcade</li>
+            <li>Juego 3D exploración</li>
+            <li>Puzzle game</li>
+            <li>Proyecto personal</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
+        Características del Curso
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 text-center rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <div class="text-5xl mb-3">💻</div>
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Acceso a Herramientas</h3>
+          <p class="text-gray-700 dark:text-gray-300">
+            Licencias educativas de motores y software profesional.
+          </p>
+        </div>
+
+        <div class="p-6 text-center rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <div class="text-5xl mb-3">👨‍🏫</div>
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Mentorería</h3>
+          <p class="text-gray-700 dark:text-gray-300">
+            Acompañamiento de profesionales de la industria.
+          </p>
+        </div>
+
+        <div class="p-6 text-center rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <div class="text-5xl mb-3">🏆</div>
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Portfolio</h3>
+          <p class="text-gray-700 dark:text-gray-300">
+            Crea proyectos para tu portafolio profesional.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-gradient-to-br from-secondary/10 to-transparent">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">
+        Crea Tu Primer Videojuego
+      </h2>
+      <p class="text-gray-700 dark:text-gray-200 text-lg mb-8 max-w-2xl mx-auto">
+        Convertiremos tu pasión por los videojuegos en habilidades profesionales. Desde principiante hasta desarrollador competente.
+      </p>
+      <div class="flex gap-4 justify-center flex-wrap">
+        <a href="/contact" class="bg-secondary hover:bg-secondary/90 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105">
+          Inscribirse Ahora
+        </a>
+        <a href="/contact" class="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105">
+          Más Información
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intersection Observer Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Marcar todos como activos inicialmente para evitar invisibilidad en carga
+      document.querySelectorAll('.motion-on-scroll').forEach(el => {
+        el.classList.add('motion-active');
+      });
+
+      // Luego configurar el observer para animaciones al scroll
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('motion-active');
+          }
+        });
+      }, { threshold: 0.05 });
+
+      document.querySelectorAll('.motion-on-scroll').forEach(el => {
+        observer.observe(el);
+      });
+    });
+  </script>
+
+  <style>
+    .motion-on-scroll {
+      will-change: opacity, transform;
+    }
+  </style>
+</Base>

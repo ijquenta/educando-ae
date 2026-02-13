@@ -1,0 +1,247 @@
+---
+import Base from "@/layouts/Base.astro";
+---
+
+<Base entry_keys={["about", "index"]}>
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center overflow-hidden py-16">
+    <div class="absolute inset-0 opacity-20 pointer-events-none">
+      <div class="w-full h-full bg-[url('https://www.transparenttextures.com/patterns/paper-fibers.png')] dark:bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')]"></div>
+    </div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        
+        <!-- Content Section -->
+        <div class="motion-preset-slide-right motion-on-scroll">
+          <h1 class="text-4xl md:text-5xl font-extrabold text-secondary mb-4">
+            Lectura Veloz y Comprensiva
+          </h1>
+          <p class="text-gray-700 dark:text-gray-200 text-lg mb-8">
+            Domina la técnica de lectura ultraveloz con comprensión crítica. Alcanza velocidades de 1,000+ palabras por minuto manteniendo excelente retención.
+          </p>
+
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-8">
+            <h2 class="text-2xl font-bold text-secondary mb-4">Información del Curso</h2>
+            
+            <div class="space-y-4 mb-6">
+              <div class="flex items-start gap-3">
+                <span class="text-secondary font-bold">⚡</span>
+                <div>
+                  <h3 class="font-semibold text-gray-800 dark:text-white">Duración</h3>
+                  <p class="text-gray-700 dark:text-gray-300">8 meses de entrenamiento avanzado</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-secondary font-bold">👥</span>
+                <div>
+                  <h3 class="font-semibold text-gray-800 dark:text-white">Público Objetivo</h3>
+                  <p class="text-gray-700 dark:text-gray-300">Estudiantes avanzados, profesionales</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-secondary font-bold">🎯</span>
+                <div>
+                  <h3 class="font-semibold text-gray-800 dark:text-white">Objetivo</h3>
+                  <p class="text-gray-700 dark:text-gray-300">Lectura ultraveloz con máxima comprensión</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="w-full bg-secondary hover:bg-secondary/90 text-white font-semibold py-3 rounded-lg transition-all duration-300 hover:scale-105">
+              Inscribirse Ahora
+            </button>
+          </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="motion-scale-in-[0.5] motion-delay-[0.4s] motion-on-scroll">
+          <div class="relative w-full h-96 rounded-2xl overflow-hidden shadow-2xl">
+            <img 
+              src="/images/curso-lectura-rapida.jpg" 
+              alt="Lectura Veloz y Comprensiva" 
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute inset-0 bg-gradient-to-br from-secondary/20 to-transparent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Content Section -->
+  <section class="py-16 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
+        Fases del Programa
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-2xl font-bold text-secondary">1</span>
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Diagnóstico Inicial</h3>
+          </div>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 list-disc list-inside">
+            <li>Evaluación de velocidad actual</li>
+            <li>Medición de comprensión</li>
+            <li>Identificación de hábitos</li>
+            <li>Diseño de plan personalizado</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-2xl font-bold text-secondary">2</span>
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Técnicas Neurometal</h3>
+          </div>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 list-disc list-inside">
+            <li>Activación de potencial cerebral</li>
+            <li>Sincronización hemisférica</li>
+            <li>Ampliación del campo visual</li>
+            <li>Procesamiento acelerado</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-2xl font-bold text-secondary">3</span>
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Comprensión Crítica</h3>
+          </div>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 list-disc list-inside">
+            <li>Lectura analítica</li>
+            <li>Identificación de patrones</li>
+            <li>Pensamiento crítico</li>
+            <li>Síntesis de información</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-2xl font-bold text-secondary">4</span>
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Retención Avanzada</h3>
+          </div>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 list-disc list-inside">
+            <li>Técnicas de memoria</li>
+            <li>Mapeo mental</li>
+            <li>Resumen efectivo</li>
+            <li>Recordar a largo plazo</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-2xl font-bold text-secondary">5</span>
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Velocidades Progresivas</h3>
+          </div>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 list-disc list-inside">
+            <li>Entrenamiento gradual</li>
+            <li>Aumento escalonado</li>
+            <li>Adaptación cognitiva</li>
+            <li>Consolidación de habilidades</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-2xl font-bold text-secondary">6</span>
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Maestría Final</h3>
+          </div>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 list-disc list-inside">
+            <li>Lectura a 1,000+ palabras/minuto</li>
+            <li>Comprensión del 95%+</li>
+            <li>Aplicación profesional</li>
+            <li>Certificación de competencia</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
+        Resultados Garantizados
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="p-6 text-center rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <div class="text-4xl font-bold text-secondary mb-2">10x</div>
+          <p class="text-gray-700 dark:text-gray-300 font-semibold">
+            Incremento de velocidad
+          </p>
+        </div>
+
+        <div class="p-6 text-center rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <div class="text-4xl font-bold text-secondary mb-2">95%</div>
+          <p class="text-gray-700 dark:text-gray-300 font-semibold">
+            Comprensión garantizada
+          </p>
+        </div>
+
+        <div class="p-6 text-center rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <div class="text-4xl font-bold text-secondary mb-2">80%</div>
+          <p class="text-gray-700 dark:text-gray-300 font-semibold">
+            Ahorro de tiempo
+          </p>
+        </div>
+
+        <div class="p-6 text-center rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <div class="text-4xl font-bold text-secondary mb-2">100%</div>
+          <p class="text-gray-700 dark:text-gray-300 font-semibold">
+            Satisfacción comprobada
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-gradient-to-br from-secondary/10 to-transparent">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">
+        Una Llave para el Éxito del Mañana
+      </h2>
+      <p class="text-gray-700 dark:text-gray-200 text-lg mb-8 max-w-2xl mx-auto">
+        Únete a cientos de profesionales que han transformado su forma de leer y aprender. Lectura ultraveloz con máxima comprensión.
+      </p>
+      <div class="flex gap-4 justify-center flex-wrap">
+        <a href="/contact" class="bg-secondary hover:bg-secondary/90 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105">
+          Inscribirse Ahora
+        </a>
+        <a href="/contact" class="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105">
+          Más Información
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intersection Observer Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Marcar todos como activos inicialmente para evitar invisibilidad en carga
+      document.querySelectorAll('.motion-on-scroll').forEach(el => {
+        el.classList.add('motion-active');
+      });
+
+      // Luego configurar el observer para animaciones al scroll
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('motion-active');
+          }
+        });
+      }, { threshold: 0.05 });
+
+      document.querySelectorAll('.motion-on-scroll').forEach(el => {
+        observer.observe(el);
+      });
+    });
+  </script>
+
+  <style>
+    .motion-on-scroll {
+      will-change: opacity, transform;
+    }
+  </style>
+</Base>

@@ -2,14 +2,18 @@
 import PageHeader from "@/components/core/PageHeader.astro";
 import Base from "@/layouts/Base.astro";
 import { getEntry } from "astro:content";
-import type { PageType } from "@/content/page.types";
 
-const about = await getEntry("changelog", "index");
-const page_data = { ...(about.data as PageType), content: about.body };
-const { Content } = await about.render();
+const present = await getEntry("present", "index");
+const page_data = {
+  ...present.data,
+  content: present.body,
+};
+const { Content } = await present.render();
 ---
 
-<Base entry_keys={["changelog", "index"]}>
+<Base
+  entry_keys={["present", "index"]}
+>
   <section class="py-16">
     <div class="container">
       <div class="mx-auto max-w-[768px] text-center">

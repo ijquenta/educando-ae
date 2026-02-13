@@ -1,0 +1,205 @@
+---
+import Base from "@/layouts/Base.astro";
+---
+
+<Base entry_keys={["about", "index"]}>
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center overflow-hidden py-16">
+    <div class="absolute inset-0 opacity-20 pointer-events-none">
+      <div class="w-full h-full bg-[url('https://www.transparenttextures.com/patterns/paper-fibers.png')] dark:bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')]"></div>
+    </div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        
+        <!-- Content Section -->
+        <div class="motion-preset-slide-right motion-on-scroll">
+          <h1 class="text-4xl md:text-5xl font-extrabold text-secondary mb-4">
+            Matemáticas
+          </h1>
+          <p class="text-gray-700 dark:text-gray-200 text-lg mb-8">
+            Domina la matemática con un enfoque práctico y comprensible. Desde conceptos básicos hasta avanzados, aprende de forma amigable y conectada con la realidad.
+          </p>
+
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-8">
+            <h2 class="text-2xl font-bold text-secondary mb-4">Información del Curso</h2>
+            
+            <div class="space-y-4 mb-6">
+              <div class="flex items-start gap-3">
+                <span class="text-secondary font-bold">📊</span>
+                <div>
+                  <h3 class="font-semibold text-gray-800 dark:text-white">Duración</h3>
+                  <p class="text-gray-700 dark:text-gray-300">12 meses - Flexible según nivel</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-secondary font-bold">👥</span>
+                <div>
+                  <h3 class="font-semibold text-gray-800 dark:text-white">Público Objetivo</h3>
+                  <p class="text-gray-700 dark:text-gray-300">Primaria, Secundaria y Preparatoria</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-secondary font-bold">🎯</span>
+                <div>
+                  <h3 class="font-semibold text-gray-800 dark:text-white">Objetivo</h3>
+                  <p class="text-gray-700 dark:text-gray-300">Dominar conceptos matemáticos fundamentales</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="w-full bg-secondary hover:bg-secondary/90 text-white font-semibold py-3 rounded-lg transition-all duration-300 hover:scale-105">
+              Inscribirse Ahora
+            </button>
+          </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="motion-scale-in-[0.5] motion-delay-[0.4s] motion-on-scroll">
+          <div class="relative w-full h-96 rounded-2xl overflow-hidden shadow-2xl">
+            <img 
+              src="/images/curso-mate.jpg" 
+              alt="Matemáticas" 
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute inset-0 bg-gradient-to-br from-secondary/20 to-transparent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Content Section -->
+  <section class="py-16 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
+        Temas a Cubrir
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <h3 class="text-xl font-semibold text-secondary mb-3">Aritmética Básica</h3>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 list-disc list-inside">
+            <li>Operaciones fundamentales</li>
+            <li>Fracciones y decimales</li>
+            <li>Proporciones y porcentajes</li>
+            <li>Números enteros</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <h3 class="text-xl font-semibold text-secondary mb-3">Álgebra</h3>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 list-disc list-inside">
+            <li>Ecuaciones lineales</li>
+            <li>Sistemas de ecuaciones</li>
+            <li>Polinomios</li>
+            <li>Factorización</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <h3 class="text-xl font-semibold text-secondary mb-3">Geometría</h3>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 list-disc list-inside">
+            <li>Figuras geométricas</li>
+            <li>Teorema de Pitágoras</li>
+            <li>Área y perímetro</li>
+            <li>Volumen de sólidos</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <h3 class="text-xl font-semibold text-secondary mb-3">Cálculo Introductorio</h3>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 list-disc list-inside">
+            <li>Límites y continuidad</li>
+            <li>Derivadas básicas</li>
+            <li>Integrales indefinidas</li>
+            <li>Aplicaciones prácticas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Methodology Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
+        Metodología de Enseñanza
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 text-center rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <div class="text-5xl mb-3">🎓</div>
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Teórica-Práctica</h3>
+          <p class="text-gray-700 dark:text-gray-300">
+            Balance entre conceptos teóricos y ejercicios prácticos aplicables.
+          </p>
+        </div>
+
+        <div class="p-6 text-center rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <div class="text-5xl mb-3">👨‍💻</div>
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Personalizada</h3>
+          <p class="text-gray-700 dark:text-gray-300">
+            Adaptable al ritmo y nivel de comprensión de cada estudiante.
+          </p>
+        </div>
+
+        <div class="p-6 text-center rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all duration-300">
+          <div class="text-5xl mb-3">🌍</div>
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Contextualizada</h3>
+          <p class="text-gray-700 dark:text-gray-300">
+            Conectada con situaciones reales y del mundo circundante.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-gradient-to-br from-secondary/10 to-transparent">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">
+        Domina la Matemática con Confianza
+      </h2>
+      <p class="text-gray-700 dark:text-gray-200 text-lg mb-8 max-w-2xl mx-auto">
+        No importa tu nivel actual, aquí encontrarás el apoyo y la guía que necesitas para entender y disfrutar las matemáticas.
+      </p>
+      <div class="flex gap-4 justify-center flex-wrap">
+        <a href="/contact" class="bg-secondary hover:bg-secondary/90 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105">
+          Inscribirse Ahora
+        </a>
+        <a href="/contact" class="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105">
+          Más Información
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intersection Observer Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Marcar todos como activos inicialmente para evitar invisibilidad en carga
+      document.querySelectorAll('.motion-on-scroll').forEach(el => {
+        el.classList.add('motion-active');
+      });
+
+      // Luego configurar el observer para animaciones al scroll
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('motion-active');
+          }
+        });
+      }, { threshold: 0.05 });
+
+      document.querySelectorAll('.motion-on-scroll').forEach(el => {
+        observer.observe(el);
+      });
+    });
+  </script>
+
+  <style>
+    .motion-on-scroll {
+      will-change: opacity, transform;
+    }
+  </style>
+</Base>

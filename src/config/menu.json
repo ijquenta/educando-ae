@@ -6,12 +6,12 @@
     },
     {
       "name": "Quiénes Somos",
-      "url": "/features",
+      "url": "/who-we-are",
       "hasChildren": true,
       "children": [
         {
-          "name": "Somos Educando AE",
-          "url": "/somos-educando-ae"
+          "name": "Acerca de Nosotros",
+          "url": "/about-us"
         },
         {
           "name": "Nuestro Equipo",
@@ -19,15 +19,15 @@
         },
         {
           "name": "¿Dónde Trabajamos?",
-          "url": "/donde-trabajamos"
+          "url": "/where-we-work"
         },
         {
-          "name": "Impacto",
-          "url": "/impacto"
+          "name": "Actualidad",
+          "url": "/present"
         },
         {
-          "name": "Historias",
-          "url": "/historias"
+          "name": "Donar",
+          "url": "/donate"
         }
       ]
     },
@@ -36,39 +36,27 @@
       "hasChildren": true,
       "children": [
         {
-          "name": "Área de trabajo",
-          "url": "/area-trabajo"
-        },
-        {
-          "name": "Programas",
-          "url": "/programas"
+          "name": "Cursos",
+          "url": "/courses"
         },
         {
           "name": "Historial",
-          "url": "/programs"
-        },
-        {
-          "name": "Campañas",
-          "url": "/campanas"
+          "url": "/record"
         }
       ]
     },
     {
-      "name": "Actualidad",
-      "url": "/about"
-    },
-    {
-      "name": "Colabora",
-      "url": "",
+      "name": "Enterate",
       "hasChildren": true,
       "children": [
-       
         {
-          "name": "Donar",
-          "url": "/donar"
+          "name": "Biblioteca",
+          "url": "/library"
         }
       ]
     }
+    
+    
   ],
 
   "footer": [

@@ -188,6 +188,49 @@
 }
 
 
+//programs
+.programs-content {
+  .badge {
+    @apply relative top-0 bg-transparent px-0 py-0 text-sm font-semibold text-secondary;
+    
+    &.primary {
+      @apply bg-transparent text-primary;
+    }
+    &.secondary {
+      @apply bg-transparent text-secondary;
+    }
+    &.accent {
+      @apply bg-transparent text-accent;
+    }
+    &.danger {
+      @apply bg-transparent text-danger;
+    }
+    &.success {
+      @apply bg-transparent text-success;
+    }
+    &.warning {
+      @apply bg-transparent text-warning;
+    }
+    &.info {
+      @apply bg-transparent text-info;
+    }
+    &.light {
+      @apply bg-transparent text-text;
+    }
+    &.dark {
+      @apply bg-transparent text-text;
+    }
+  }
+  
+  ul {
+    @apply mt-4 list-disc pl-5;
+    
+    li {
+      @apply mb-2 text-text-secondary;
+    }
+  }
+}
+
 //changelogs
 .changelogs {
   &-content {
