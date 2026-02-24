@@ -13,6 +13,10 @@ import Base from "@/layouts/Base.astro";
         
         <!-- Content Section -->
         <div class="motion-preset-slide-right motion-on-scroll">
+          <a href="/cursos" onclick="event.preventDefault(); if (history.length>1) history.back(); else location.href='/cursos';" aria-label="Volver" class="inline-flex items-center gap-2 text-sm font-medium text-secondary bg-white/90 dark:bg-gray-800 px-3 py-1 rounded-full shadow hover:scale-105 transition-transform mb-4">
+            <span class="text-lg">←</span>
+            <span class="hidden sm:inline">Volver</span>
+          </a>
           <h1 class="text-4xl md:text-5xl font-extrabold text-secondary mb-4">
             Lectura Veloz y Comprensiva
           </h1>
@@ -25,31 +29,32 @@ import Base from "@/layouts/Base.astro";
             
             <div class="space-y-4 mb-6">
               <div class="flex items-start gap-3">
-                <span class="text-secondary font-bold">⚡</span>
                 <div>
-                  <h3 class="font-semibold text-gray-800 dark:text-white">Duración</h3>
-                  <p class="text-gray-700 dark:text-gray-300">8 meses de entrenamiento avanzado</p>
+                  <p class="font-semibold text-gray-800 dark:text-white">Duración</p>
+                  <p class="text-gray-700 dark:text-gray-300">2 a 5 meses</p>
                 </div>
               </div>
               <div class="flex items-start gap-3">
-                <span class="text-secondary font-bold">👥</span>
                 <div>
-                  <h3 class="font-semibold text-gray-800 dark:text-white">Público Objetivo</h3>
-                  <p class="text-gray-700 dark:text-gray-300">Estudiantes avanzados, profesionales</p>
-                </div>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="text-secondary font-bold">🎯</span>
-                <div>
-                  <h3 class="font-semibold text-gray-800 dark:text-white">Objetivo</h3>
-                  <p class="text-gray-700 dark:text-gray-300">Lectura ultraveloz con máxima comprensión</p>
+                  <p class="font-semibold text-gray-800 dark:text-white">Público Objetivo</p>
+                  <p class="text-gray-700 dark:text-gray-300">Estudiantes avanzados</p>
                 </div>
               </div>
             </div>
 
-            <button class="w-full bg-secondary hover:bg-secondary/90 text-white font-semibold py-3 rounded-lg transition-all duration-300 hover:scale-105">
-              Inscribirse Ahora
-            </button>
+            <a
+              href="https://wa.me/59178792865?text=Hola%20Educando%2C%20quiero%20inscribirme%20al%20curso%20de%20Lectura%20Veloz%20y%20Comprensiva.%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20por%20favor."
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Inscribirse por WhatsApp"
+              class="w-full inline-flex items-center justify-center gap-2 bg-secondary hover:bg-secondary/90 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105"
+            >
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                <path d="M20.52 3.48A11.93 11.93 0 0012 0C5.373 0 .001 5.373.001 12c0 2.113.55 4.18 1.596 6.02L0 24l6.206-1.592A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12 0-3.207-1.252-6.216-3.48-8.52zM12 21.6c-1.66 0-3.27-.45-4.66-1.3l-.33-.2-3.68.94.98-3.59-.21-.36A9.6 9.6 0 012.4 12 9.6 9.6 0 0112 2.4 9.6 9.6 0 0121.6 12 9.6 9.6 0 0112 21.6z"/>
+                <path d="M17.14 14.9c-.29-.15-1.71-.84-1.98-.94-.26-.1-.45-.15-.64.15-.19.29-.74.94-.9 1.13-.16.19-.31.21-.58.07-.27-.15-1.14-.42-2.17-1.33-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.56.12-.12.27-.31.4-.46.13-.15.17-.27.26-.45.09-.19.04-.36-.02-.51-.07-.15-.64-1.54-.88-2.11-.23-.55-.46-.48-.64-.49l-.55-.01c-.19 0-.5.07-.77.36-.27.29-1.03 1.01-1.03 2.46 0 1.45 1.05 2.86 1.2 3.06.15.2 2.08 3.18 5.04 4.33 2.96 1.16 2.96.77 3.5.72.54-.05 1.75-.72 2-1.42.25-.7.25-1.3.18-1.42-.07-.12-.26-.19-.55-.34z"/>
+              </svg>
+              <span>Inscribirse</span>
+            </a>
           </div>
         </div>
 
@@ -206,11 +211,18 @@ import Base from "@/layouts/Base.astro";
         Únete a cientos de profesionales que han transformado su forma de leer y aprender. Lectura ultraveloz con máxima comprensión.
       </p>
       <div class="flex gap-4 justify-center flex-wrap">
-        <a href="/contact" class="bg-secondary hover:bg-secondary/90 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105">
-          Inscribirse Ahora
-        </a>
-        <a href="/contact" class="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105">
-          Más Información
+        <a
+          href="https://wa.me/59178792865?text=Hola%20Educando%2C%20quiero%20inscribirme%20al%20curso%20de%20Lectura%20Veloz%20y%20Comprensiva.%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20por%20favor."
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Inscribirse por WhatsApp"
+          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-secondary hover:bg-secondary/90 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105"
+        >
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M20.52 3.48A11.93 11.93 0 0012 0C5.373 0 .001 5.373.001 12c0 2.113.55 4.18 1.596 6.02L0 24l6.206-1.592A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12 0-3.207-1.252-6.216-3.48-8.52zM12 21.6c-1.66 0-3.27-.45-4.66-1.3l-.33-.2-3.68.94.98-3.59-.21-.36A9.6 9.6 0 012.4 12 9.6 9.6 0 0112 2.4 9.6 9.6 0 0121.6 12 9.6 9.6 0 0112 21.6z"/>
+            <path d="M17.14 14.9c-.29-.15-1.71-.84-1.98-.94-.26-.1-.45-.15-.64.15-.19.29-.74.94-.9 1.13-.16.19-.31.21-.58.07-.27-.15-1.14-.42-2.17-1.33-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.56.12-.12.27-.31.4-.46.13-.15.17-.27.26-.45.09-.19.04-.36-.02-.51-.07-.15-.64-1.54-.88-2.11-.23-.55-.46-.48-.64-.49l-.55-.01c-.19 0-.5.07-.77.36-.27.29-1.03 1.01-1.03 2.46 0 1.45 1.05 2.86 1.2 3.06.15.2 2.08 3.18 5.04 4.33 2.96 1.16 2.96.77 3.5.72.54-.05 1.75-.72 2-1.42.25-.7.25-1.3.18-1.42-.07-.12-.26-.19-.55-.34z"/>
+          </svg>
+          <span>Inscribirse</span>
         </a>
       </div>
     </div>

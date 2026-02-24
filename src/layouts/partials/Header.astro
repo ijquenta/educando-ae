@@ -49,6 +49,10 @@ const { pathname } = Astro.url;
           transform="rotate(45 10 10)"></polygon>
       </svg>
     </label>
+    <!-- Theme toggle for mobile: placed next to the menu icon -->
+    <div class="order-2 flex items-center lg:hidden mr-2">
+      <ThemeToggle />
+    </div>
     <!-- /navbar toggler -->
 
     <ul
@@ -112,7 +116,7 @@ const { pathname } = Astro.url;
         ))
       }
     </ul>
-    <div class="order-1 ml-auto absolute right-3 top-3 items-center md:order-2 md:ml-0 lg:relative lg:right-0 lg:flex lg:top-0">
+    <div class="order-1 ml-auto absolute right-3 top-3 items-center md:order-2 md:ml-0 lg:relative lg:right-0 lg:flex lg:top-0 hidden lg:flex">
       <ThemeToggle />
     </div>
   </header>

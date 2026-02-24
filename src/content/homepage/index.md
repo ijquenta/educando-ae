@@ -56,28 +56,28 @@ testimonial:
   title: Nuestros estudiantes y sus familias tienen cosas maravillosas que decir sobre nosotros
   description: "Estamos orgullosos del impacto positivo que hemos tenido en los niños que enseñamos y en las familias que apoyamos."
   testimonial_list:
-    - author: Jhon Doe
+    - author: Jhonatan Alvarez
       rating: five
       content: "¡Estoy impresionado de lo que mi hijo ha aprendido en este instituto! El enfoque práctico hace que el aprendizaje sea divertido y significativo."
-    - author: Jane D. Smith
+    - author: Jenny Ramirez
       rating: four
       content: "Los programas son fantásticos, y mi hija se ha vuelto más confiada y creativa. ¡Lo recomiendo mucho!"
-    - author: Bob A. Nonymous
+    - author: Juan Nina
       rating: five
       content: "¡Este instituto es increíble! A mi hijo le encantan las actividades variadas, y he visto una gran mejora en sus habilidades."
-    - author: Alice Placeholder
+    - author: Alison Mita
       rating: three
       content: "Excelente programa en general. Me gustaría ver más enfoque en el aprendizaje personalizado."
-    - author: Richard Fakenham
+    - author: Ricardo Fernandez
       rating: five
       content: "Nuestro hijo ha crecido mucho en este instituto. El ambiente inclusivo y de apoyo es increíble."
-    - author: Emily Mockson
+    - author: Alejandra Escarzo
       rating: four
       content: "Estoy muy contenta de haber elegido este instituto. ¡Mi hija está emocionada de ir a clase cada día!"
-    - author: Alex Testworth
+    - author: Alberto Guitierrez
       rating: five
       content: "La mejor experiencia educativa para mi hijo. Puedo ver cómo ha crecido desde que se unió."
-    - author: Chris Placeholder
+    - author: Cristian Alba
       rating: four
       content: "¡Nos encanta este instituto! El personal es genial, y nuestro hijo siempre está emocionado de aprender algo nuevo."
 
