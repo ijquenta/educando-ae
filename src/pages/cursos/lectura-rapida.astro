@@ -16,7 +16,7 @@ import Base from "@/layouts/Base.astro";
         
         <!-- Content Section -->
         <div class="motion-preset-slide-right motion-on-scroll">
-          <a href="/cursos" onclick="event.preventDefault(); if (history.length>1) history.back(); else location.href='/cursos';" aria-label="Volver" class="inline-flex items-center gap-2 text-sm font-medium text-secondary bg-white/90 dark:bg-gray-800 px-3 py-1 rounded-full shadow hover:scale-105 transition-transform mb-4">
+          <a href="/cursos" data-back="true" aria-label="Volver" class="inline-flex items-center gap-2 text-sm font-medium text-secondary bg-white/90 dark:bg-gray-800 px-3 py-1 rounded-full shadow hover:scale-105 transition-transform mb-4">
             <span class="text-lg">←</span>
             <span class="hidden sm:inline">Volver</span>
           </a>
@@ -213,6 +213,15 @@ import Base from "@/layouts/Base.astro";
 
       document.querySelectorAll('.motion-on-scroll').forEach(el => {
         observer.observe(el);
+      });
+
+      // Back buttons: attach listener to elements with data-back to avoid inline event usage
+      document.querySelectorAll('[data-back="true"]').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          if (history.length > 1) history.back();
+          else location.href = '/cursos';
+        });
       });
     });
   </script>
