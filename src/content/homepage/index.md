@@ -11,8 +11,8 @@ banner:
     - /images/educando_kids_5_o.jpg
     - /images/educando_people_6_o.jpg
   buttons:
-    - label: Nuestros Programas
-      href: "/programs"
+    - label: Nuestros Cursos
+      href: "/courses"
       addClasses: "bg-secondary text-white hover:bg-blue dark:border-white/10 dark:border"
 
 sections:
@@ -21,7 +21,7 @@ sections:
     image: /images/creativity.png
 
   - title: Descubre Nuevas Posibilidades 🚀
-    content: "Desde artes y ciencias hasta robótica y programación, nuestros programas abren puertas a nuevas experiencias y habilidades que durarán toda la vida."
+    content: "Desde artes y ciencias hasta robótica y programación, nuestros cursos abren puertas a nuevas experiencias y habilidades que durarán toda la vida."
     image: /images/tech.png
 
 ##key features
@@ -31,7 +31,7 @@ features:
   feature_list:
     - icon: "box"  #icon package react-feather-icon [https://feathericons.com/]
       title: Aprendizaje Activo
-      content: "Nuestros programas son interactivos, permitiendo que los niños se involucren activamente en su aprendizaje a través del juego y actividades reales."
+      content: "Nuestros cursos son interactivos, permitiendo que los niños se involucren activamente en su aprendizaje a través del juego y actividades reales."
     - icon: "clock"  #icon package react-feather-icon [https://feathericons.com/]
       title: Temas Actualizados
       content: Usamos técnicas de enseñanza modernas para asegurarnos de que los <span class="text-accent font-bold">niños</span> siempre estén <span class="text-[#38bdf8] font-bold">aprendiendo</span> contenido <span class="text-[#e41c81] font-bold">relevante</span> y emocionante.
@@ -43,7 +43,7 @@ features:
       content: "Priorizamos la inclusión, asegurándonos de que cada niño/a se sienta valorado y apoyado en su camino de aprendizaje."
     - icon: "zap"  #icon package react-feather-icon [https://feathericons.com/]
       title: Orientados a Resultados
-      content: "Nuestros programas están diseñados para ayudar a los niños a desarrollar habilidades que puedan usar en el mundo real, preparándolos para el éxito."
+      content: "Nuestros cursos están diseñados para ayudar a los niños a desarrollar habilidades que puedan usar en el mundo real, preparándolos para el éxito."
     - icon: "code"  #icon package react-feather-icon [https://feathericons.com/]
       title: Tecnológica
       content: "Utilizamos la tecnología para mejorar el aprendizaje, equipando a los niños con las habilidades digitales necesarias en el mundo actual."
@@ -85,7 +85,7 @@ testimonial:
 ## Call to Action
 call_to_action:
   title: "Únete a <span class='text-accent text-shadow-[0px_5px_15px]' >Nosotros</span> y Crezcamos <span class='text-[#38bdf8] text-shadow-[0px_5px_15px]'>Juntos</span>."
-  description: "Inscríbete hoy en nuestros programas y brinda a tu hijo/a la oportunidad de descubrir, aprender y crecer en un ambiente inspirador."
+  description: "Inscríbete hoy en nuestros cursos y brinda a tu hijo/a la oportunidad de descubrir, aprender y crecer en un ambiente inspirador."
   button: 
     label: "Contactanos"
     href: "/contact"
