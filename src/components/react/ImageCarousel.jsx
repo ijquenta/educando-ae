@@ -2,11 +2,11 @@ import { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "react-feather";
 import SwiperCore from "swiper";
 import "swiper/css";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const ImageCarousel = ({ images = [] }) => {
-  SwiperCore.use([Navigation]);
+  SwiperCore.use([Navigation, Autoplay]);
   const [swiper, setSwiper] = useState(null);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
@@ -26,9 +26,13 @@ const ImageCarousel = ({ images = [] }) => {
   return (
     <div className="relative w-full h-full">
       <Swiper
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         slidesPerView={1}
         loop={true}
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: true,
+        }}
         navigation={{
           prevEl: prevRef.current,
           nextEl: nextRef.current,

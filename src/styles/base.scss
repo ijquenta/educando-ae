@@ -1,9 +1,8 @@
 body {
-  @apply font-primary text-text bg-background
+  @apply font-primary text-text bg-background bg-[url(/images/bg.svg)] bg-cover bg-repeat;
 }
 .dark body {
-
-  @apply bg-slate-950 bg-[url(/images/bg.svg)] bg-cover bg-repeat;
+  @apply bg-slate-950;
 }
 
 h1 {

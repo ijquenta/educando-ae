@@ -1,19 +1,18 @@
 ---
 import Base from "@/layouts/Base.astro";
+import ImageCarousel from "@/components/react/ImageCarousel";
 ---
 
 <Base entry_keys={["pages", "index"]}>
   <!-- Hero Section Enhanced -->
-  <section class="relative min-h-[70vh] flex items-center overflow-hidden py-16">
-    <!-- Gradient Background -->
-    <div class="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-secondary/5 dark:from-secondary/10 dark:to-secondary/5"></div>
-    <div class="absolute inset-0 opacity-10 pointer-events-none">
-      <div class="w-full h-full bg-[url('https://www.transparenttextures.com/patterns/paper-fibers.png')] dark:bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')]"></div>
+  <section class="relative min-h-screen flex items-center overflow-hidden py-16">
+    <!-- Carousel Background -->
+    <div class="absolute inset-0 z-0">
+      <ImageCarousel client:load />
     </div>
     
-    <!-- Decorative elements -->
-    <div class="absolute top-20 right-10 w-72 h-72 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
-    <div class="absolute bottom-0 left-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl pointer-events-none"></div>
+    <!-- Overlay to darken carousel -->
+    <div class="absolute inset-0 bg-black/50 dark:bg-black/60 z-5"></div>
     
     <div class="container mx-auto px-4 relative z-10">
       <div class="max-w-4xl">
@@ -22,13 +21,13 @@ import Base from "@/layouts/Base.astro";
             🎓 Programas Educativos de Alto Impacto
           </span>
         </div>
-        <h1 class="text-6xl md:text-7xl font-extrabold text-gray-900 dark:text-white mb-6 motion-preset-fade motion-translate-y-in-[25%] motion-on-scroll leading-tight">
+        <h1 class="text-6xl md:text-7xl font-extrabold text-white mb-6 motion-preset-fade motion-translate-y-in-[25%] motion-on-scroll leading-tight">
           Nuestros <span class="bg-gradient-to-r from-secondary to-secondary/70 bg-clip-text text-transparent">Cursos</span>
         </h1>
-        <p class="text-xl md:text-2xl text-gray-700 dark:text-gray-200 mb-6 motion-preset-fade motion-delay-[0.2s] motion-on-scroll max-w-2xl">
+        <p class="text-xl md:text-2xl text-gray-100 mb-6 motion-preset-fade motion-delay-[0.2s] motion-on-scroll max-w-2xl">
           Programas especializados diseñados para transformar tu educación y desarrollar habilidades estratégicas para tu futuro.
         </p>
-        <p class="text-lg text-gray-600 dark:text-gray-400 motion-preset-fade motion-delay-[0.4s] motion-on-scroll max-w-2xl leading-relaxed">
+        <p class="text-lg text-gray-200 motion-preset-fade motion-delay-[0.4s] motion-on-scroll max-w-2xl leading-relaxed">
           Metodologías comprobadas, mentorería personalizada y comunidad de aprendices que comparten tu visión de crecimiento.
         </p>
       </div>
@@ -101,15 +100,6 @@ import Base from "@/layouts/Base.astro";
             <p class="text-gray-700 dark:text-gray-300 mb-6 line-clamp-2">
               Aprende técnicas comprobadas para leer más rápido sin perder comprensión. Ideal para estudiantes de 8 a 18 años.
             </p>
-            <div class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
-              <div class="flex gap-4 text-xs text-gray-600 dark:text-gray-400">
-                <span>⏱️ 8 meses</span>
-                <span>👥 +150 alumnos</span>
-              </div>
-              <div class="inline-flex items-center text-secondary font-semibold group-hover:translate-x-2 transition-transform">
-                <span>→</span>
-              </div>
-            </div>
           </div>
         </a>
 
@@ -141,15 +131,6 @@ import Base from "@/layouts/Base.astro";
             <p class="text-gray-700 dark:text-gray-300 mb-6 line-clamp-2">
               Domina conceptos matemáticos con un enfoque práctico, desde lo básico hasta lo avanzado con aplicaciones reales.
             </p>
-            <div class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
-              <div class="flex gap-4 text-xs text-gray-600 dark:text-gray-400">
-                <span>⏱️ 12 meses</span>
-                <span>👥 +120 alumnos</span>
-              </div>
-              <div class="inline-flex items-center text-secondary font-semibold group-hover:translate-x-2 transition-transform">
-                <span>→</span>
-              </div>
-            </div>
           </div>
         </a>
 
@@ -181,15 +162,6 @@ import Base from "@/layouts/Base.astro";
             <p class="text-gray-700 dark:text-gray-300 mb-6 line-clamp-2">
               Crea videojuegos profesionales con Unity, Unreal Engine y Godot. De cero a portafolio profesional.
             </p>
-            <div class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
-              <div class="flex gap-4 text-xs text-gray-600 dark:text-gray-400">
-                <span>⏱️ 10 meses</span>
-                <span>👥 +80 alumnos</span>
-              </div>
-              <div class="inline-flex items-center text-secondary font-semibold group-hover:translate-x-2 transition-transform">
-                <span>→</span>
-              </div>
-            </div>
           </div>
         </a>
 
@@ -221,57 +193,8 @@ import Base from "@/layouts/Base.astro";
             <p class="text-gray-700 dark:text-gray-300 mb-6 line-clamp-2">
               Alcanza 1,000+ palabras por minuto con comprensión crítica. Para estudiantes avanzados y profesionales.
             </p>
-            <div class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
-              <div class="flex gap-4 text-xs text-gray-600 dark:text-gray-400">
-                <span>⏱️ 8 meses</span>
-                <span>👥 +60 alumnos</span>
-              </div>
-              <div class="inline-flex items-center text-secondary font-semibold group-hover:translate-x-2 transition-transform">
-                <span>→</span>
-              </div>
-            </div>
           </div>
         </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why Our Courses Section -->
-  <section class="py-24 bg-white dark:bg-gray-900/50 border-b border-gray-200 dark:border-gray-800">
-    <div class="container mx-auto px-4">
-      <div class="text-center mb-16 motion-preset-fade motion-on-scroll">
-        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-          ¿Por Qué Elegir Educando AE?
-        </h2>
-        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Transformamos vidas a través de la educación de calidad y mentorería dedicada
-        </p>
-      </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        <div class="p-8 bg-gradient-to-br from-blue-50/50 to-blue-50/0 dark:from-blue-900/20 dark:to-transparent rounded-2xl border border-blue-200/50 dark:border-blue-800/30 motion-preset-bounce motion-on-scroll hover:shadow-lg transition-all duration-300">
-          <div class="text-5xl mb-4">🎯</div>
-          <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-3">Resultados Comprobados</h3>
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-            Metodologías validadas con 95% de satisfacción que generan transformación real en el aprendizaje.
-          </p>
-        </div>
-        
-        <div class="p-8 bg-gradient-to-br from-green-50/50 to-green-50/0 dark:from-green-900/20 dark:to-transparent rounded-2xl border border-green-200/50 dark:border-green-800/30 motion-scale-in-[0.5] motion-on-scroll hover:shadow-lg transition-all duration-300">
-          <div class="text-5xl mb-4">👨‍🏫</div>
-          <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-3">Mentorería Personalizada</h3>
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-            Acompañamiento continuo adaptado a tu ritmo y necesidades específicas de aprendizaje.
-          </p>
-        </div>
-        
-        <div class="p-8 bg-gradient-to-br from-purple-50/50 to-purple-50/0 dark:from-purple-900/20 dark:to-transparent rounded-2xl border border-purple-200/50 dark:border-purple-800/30 motion-preset-pop motion-on-scroll hover:shadow-lg transition-all duration-300">
-          <div class="text-5xl mb-4">📈</div>
-          <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-3">Impacto Duradero</h3>
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-            Habilidades que transforman tu futuro académico, personal y profesional.
-          </p>
-        </div>
       </div>
     </div>
   </section>

@@ -45,15 +45,6 @@ const TestimonialSlider = ({ list }) => {
               <h4 className="mb-2">{item.author}</h4>
               <p className="mb-4 text-[#666]">{item.organization}</p>
               <p dangerouslySetInnerHTML={{__html: markdownify(item.content)}}/>
-              <div
-                className={`review-rating mt-6 flex items-center justify-center space-x-2.5 ${item.rating}  `}
-              >
-                <Star />
-                <Star />
-                <Star />
-                <Star />
-                <Star />
-              </div>
             </div>
           </SwiperSlide>
         ))}
